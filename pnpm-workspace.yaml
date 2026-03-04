@@ -1,0 +1,23 @@
+cleanupUnusedCatalogs: true
+shellEmulator: true # https://pnpm.io/settings#shellemulator
+trustPolicy: no-downgrade # https://pnpm.io/settings#trustpolicy
+
+packages:
+  - packages/*
+
+catalog:
+  '@antfu/eslint-config': ^7.6.1
+  '@types/node': ^25.3.3
+  bumpp: ^10.4.1
+  eslint: ^10.0.2
+  esno: ^4.8.0
+  execa: ^9.6.1
+  lint-staged: ^16.3.2
+  simple-git-hooks: ^2.13.1
+  tsdown: ^0.20.3
+  typescript: ^5.9.3
+  vitest: ^4.0.18
+
+onlyBuiltDependencies:
+  - esbuild
+  - simple-git-hooks
