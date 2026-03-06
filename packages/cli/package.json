@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "description": "AI-powered translation CLI with TUI",
+  "author": "Moozon",
   "license": "MIT",
   "exports": {
     ".": {
@@ -30,7 +31,8 @@
     "ink-spinner": "catalog:prod",
     "ink-text-input": "catalog:prod",
     "pathe": "catalog:prod",
-    "react": "catalog:prod"
+    "react": "catalog:prod",
+    "terminal-link": "catalog:prod"
   },
   "devDependencies": {
     "@types/node": "catalog:dev",

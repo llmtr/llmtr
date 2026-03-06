@@ -1,9 +1,8 @@
 import { createLanguageModel, Translator } from '@llmtr/core'
 import { defineCommand } from 'citty'
-import { render } from 'ink'
-import { createElement } from 'react'
 import { resolveConfig } from '../config.js'
 import { WatchApp } from '../tui/WatchApp.js'
+import { buildTranslateOptions, renderTUI } from '../utils.js'
 
 export const watchCommand = defineCommand({
   meta: { description: 'Watch a file and re-translate on every change' },
@@ -26,7 +25,7 @@ export const watchCommand = defineCommand({
     'provider': {
       type: 'string',
       alias: 'p',
-      description: 'AI provider: openai | anthropic | google | mistral',
+      description: 'AI provider: openai | anthropic | google | mistral | deepseek',
     },
     'model': {
       type: 'string',
@@ -56,28 +55,17 @@ export const watchCommand = defineCommand({
       outputDir: args.output,
     })
 
-    const model = createLanguageModel(config)
-    const translator = new Translator(model)
-
     const options = {
-      targetLanguages: config.targetLanguages,
-      systemPrompt: config.systemPrompt,
-      userPrompt: args.prompt,
-      outputDirectory: args.output ?? config.output?.directory,
-      fileNamePattern: config.output?.fileNamePattern,
+      ...buildTranslateOptions(config, args),
       debounce: args.debounce
         ? Number.parseInt(args.debounce, 10)
         : (config.watch?.debounce ?? 500),
     }
 
-    const { waitUntilExit } = render(
-      createElement(WatchApp, {
-        translator,
-        filePath: args.file,
-        options,
-      }),
-    )
-
-    await waitUntilExit()
+    await renderTUI(WatchApp, {
+      translator: new Translator(createLanguageModel(config)),
+      filePath: args.file,
+      options,
+    })
   },
 })

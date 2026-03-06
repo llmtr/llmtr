@@ -1,11 +1,5 @@
 import type { ProviderName, TranslationConfig } from '@llmtr/core'
-import {
-  CONFIG_DEFAULTS,
-  DEFAULT_MODELS,
-  ENV_API_KEYS,
-  loadTranslationConfig,
-  validateConfig,
-} from '@llmtr/core'
+import { loadTranslationConfig, validateConfig } from '@llmtr/core'
 
 export interface CliOverrides {
   provider?: string
@@ -17,28 +11,26 @@ export interface CliOverrides {
   fileNamePattern?: string
 }
 
-/**
- * Load config file and merge CLI argument overrides on top.
- * Throws if required fields are missing after merging.
- */
+/** Load config file then apply CLI arg overrides. Throws if required fields are missing. */
 export async function resolveConfig(overrides: CliOverrides): Promise<TranslationConfig> {
-  const fileConfig = await loadTranslationConfig(undefined, {
-    ...(overrides.provider ? { provider: overrides.provider as ProviderName } : {}),
-    ...(overrides.model ? { model: overrides.model } : {}),
-    ...(overrides.apiKey ? { apiKey: overrides.apiKey } : {}),
-    ...(overrides.lang
-      ? { targetLanguages: overrides.lang.split(',').map(l => l.trim()).filter(Boolean) }
-      : {}),
-    ...(overrides.outputDir
-      ? { output: { ...CONFIG_DEFAULTS.output, directory: overrides.outputDir } }
-      : {}),
-    ...(overrides.fileNamePattern
-      ? { output: { ...CONFIG_DEFAULTS.output, fileNamePattern: overrides.fileNamePattern } }
-      : {}),
-  })
+  const patch: Partial<TranslationConfig> = {}
 
-  validateConfig(fileConfig)
-  return fileConfig
+  if (overrides.provider)
+    patch.provider = overrides.provider as ProviderName
+  if (overrides.model)
+    patch.model = overrides.model
+  if (overrides.apiKey)
+    patch.apiKey = overrides.apiKey
+  if (overrides.lang)
+    patch.targetLanguages = overrides.lang.split(',').map(l => l.trim()).filter(Boolean)
+  if (overrides.outputDir || overrides.fileNamePattern) {
+    patch.output = {
+      ...(overrides.outputDir ? { directory: overrides.outputDir } : {}),
+      ...(overrides.fileNamePattern ? { fileNamePattern: overrides.fileNamePattern } : {}),
+    }
+  }
+
+  const config = await loadTranslationConfig(undefined, patch)
+  validateConfig(config)
+  return config
 }
-
-export { DEFAULT_MODELS, ENV_API_KEYS }

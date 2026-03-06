@@ -1,5 +1,5 @@
 import { defineCommand, runMain } from 'citty'
-import { initCommand } from './commands/init.js'
+import { configCommand } from './commands/config.js'
 import { translateCommand } from './commands/translate.js'
 import { watchCommand } from './commands/watch.js'
 
@@ -11,8 +11,9 @@ const main = defineCommand({
   },
   subCommands: {
     translate: translateCommand,
+    t: translateCommand,
     watch: watchCommand,
-    init: initCommand,
+    config: configCommand,
   },
 })
 

@@ -1,10 +1,10 @@
+import { readFile } from 'node:fs/promises'
 import process from 'node:process'
 import { checkNetwork, createLanguageModel, Translator } from '@llmtr/core'
 import { defineCommand } from 'citty'
-import { render } from 'ink'
-import { createElement } from 'react'
 import { resolveConfig } from '../config.js'
 import { TranslateApp } from '../tui/TranslateApp.js'
+import { buildTranslateOptions, renderTUI } from '../utils.js'
 
 export const translateCommand = defineCommand({
   meta: { description: 'Translate text or a file (one-shot)' },
@@ -32,7 +32,7 @@ export const translateCommand = defineCommand({
     'provider': {
       type: 'string',
       alias: 'p',
-      description: 'AI provider: openai | anthropic | google | mistral',
+      description: 'AI provider: openai | anthropic | google | mistral | deepseek',
     },
     'model': {
       type: 'string',
@@ -49,7 +49,7 @@ export const translateCommand = defineCommand({
     },
     'stdout': {
       type: 'boolean',
-      description: 'Print translated text to stdout instead of writing files',
+      description: 'Print translated text to stdout (single language only)',
       default: false,
     },
     'concurrency': {
@@ -76,62 +76,42 @@ export const translateCommand = defineCommand({
       prompt: args.prompt,
     })
 
-    const model = createLanguageModel(config)
-    const translator = new Translator(model)
+    const options = buildTranslateOptions(config, args)
 
-    const options = {
-      targetLanguages: config.targetLanguages,
-      systemPrompt: config.systemPrompt,
-      userPrompt: args.prompt,
-      concurrency: args.concurrency ? Number.parseInt(args.concurrency, 10) : undefined,
-      outputDirectory: args.output ?? config.output?.directory,
-      fileNamePattern: config.output?.fileNamePattern,
-    }
-
-    // ── stdout mode: skip TUI, just print ──────────────────────────────────
+    // stdout mode — no TUI, output is pipeable
     if (args.stdout) {
       if (options.targetLanguages.length > 1) {
-        process.stderr.write('Error: stdout mode only supports a single target language.\n')
+        process.stderr.write('Error: --stdout only supports a single target language.\n')
         process.exit(1)
       }
 
-      const text = args.file
-        ? await (await import('node:fs/promises')).readFile(args.file, 'utf-8')
-        : args.text
-
+      const text = args.file ? await readFile(args.file, 'utf-8') : args.text
       if (!text) {
-        process.stderr.write('Error: provide text as an argument or --file.\n')
+        process.stderr.write('Error: provide text as a positional argument or --file.\n')
         process.exit(1)
       }
 
-      const results = await translator.translate(text, options)
-      const r = results[0]!
-      if (r.error) {
-        process.stderr.write(`Error: ${r.error.message}\n`)
+      const translator = new Translator(createLanguageModel(config))
+      const [result] = await translator.translate(text, options)
+      if (result!.error) {
+        process.stderr.write(`Error: ${result!.error.message}\n`)
         process.exit(1)
       }
-      process.stdout.write(r.text.trimEnd())
+      process.stdout.write(result!.text.trimEnd())
       return
     }
 
-    // ── TUI mode ───────────────────────────────────────────────────────────
-    const filePath = args.file
-    const rawText = args.text
-
-    if (!filePath && !rawText) {
+    // TUI mode
+    if (!args.file && !args.text) {
       process.stderr.write('Error: provide text as a positional argument or --file.\n')
       process.exit(1)
     }
 
-    const { waitUntilExit } = render(
-      createElement(TranslateApp, {
-        translator,
-        text: rawText,
-        filePath,
-        options,
-      }),
-    )
-
-    await waitUntilExit()
+    await renderTUI(TranslateApp, {
+      translator: new Translator(createLanguageModel(config)),
+      text: args.text,
+      filePath: args.file,
+      options,
+    })
   },
 })

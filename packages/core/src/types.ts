@@ -82,7 +82,7 @@ export interface TranslationResult {
 export type StreamEvent
   = | { type: 'start', language: string }
     | { type: 'delta', language: string, delta: string }
-    | { type: 'done', language: string, text: string }
+    | { type: 'done', language: string, text: string, outputPath?: string }
     | { type: 'error', language: string, error: Error }
     | { type: 'complete', results: TranslationResult[] }
 

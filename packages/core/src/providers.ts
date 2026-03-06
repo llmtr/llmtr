@@ -1,5 +1,5 @@
 import type { LanguageModel } from 'ai'
-import type { ProviderConfig, ProviderName } from './types.js'
+import type { ProviderConfig } from './types.js'
 import process from 'node:process'
 import { createAnthropic } from '@ai-sdk/anthropic'
 import { createDeepSeek } from '@ai-sdk/deepseek'
@@ -18,40 +18,24 @@ export function createLanguageModel(config: ProviderConfig): LanguageModel {
 
   switch (config.provider) {
     case 'openai': {
-      const openai = createOpenAI({
-        apiKey,
-        ...(config.baseURL ? { baseURL: config.baseURL } : {}),
-      })
+      const openai = createOpenAI({ apiKey, ...(config.baseURL ? { baseURL: config.baseURL } : {}) })
       return openai(model)
     }
-    case 'anthropic': {
-      const anthropic = createAnthropic({ apiKey })
-      return anthropic(model)
-    }
-    case 'google': {
-      const google = createGoogleGenerativeAI({ apiKey })
-      return google(model)
-    }
-    case 'mistral': {
-      const mistral = createMistral({ apiKey })
-      return mistral(model)
-    }
+    case 'anthropic':
+      return createAnthropic({ apiKey })(model)
+    case 'google':
+      return createGoogleGenerativeAI({ apiKey })(model)
+    case 'mistral':
+      return createMistral({ apiKey })(model)
     case 'deepseek': {
-      const deepseek = createDeepSeek({
-        apiKey,
-        ...(config.baseURL ? { baseURL: config.baseURL } : {}),
-      })
+      const deepseek = createDeepSeek({ apiKey, ...(config.baseURL ? { baseURL: config.baseURL } : {}) })
       return deepseek(model)
     }
-    default: {
+    default:
       throw new Error(`Unsupported provider: "${config.provider as string}"`)
-    }
   }
 }
 
 export function hasApiKey(config: Pick<ProviderConfig, 'provider' | 'apiKey'>): boolean {
   return !!(config.apiKey ?? process.env[ENV_API_KEYS[config.provider]])
 }
-
-// Preserve backward compatibility — ProviderName is used to index DEFAULT_MODELS
-export type { ProviderName }

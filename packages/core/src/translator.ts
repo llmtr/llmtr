@@ -101,13 +101,14 @@ export class Translator {
       ? await this.translateWithStream(content, options, onEvent)
       : await this.translate(content, options)
 
-    // Write output files for successful translations
+    // Write output files for successful translations, then emit done event with outputPath
     await Promise.all(
       results
         .filter(r => !r.error)
         .map(async (result) => {
           const outputPath = await this._writeOutputFile(filePath, result, options)
           result.outputPath = outputPath
+          onEvent?.({ type: 'done', language: result.language, text: result.text, outputPath })
         }),
     )
 

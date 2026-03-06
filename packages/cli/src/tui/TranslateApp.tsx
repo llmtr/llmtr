@@ -1,18 +1,13 @@
 import type { StreamEvent, TranslateFileOptions, TranslateOptions, TranslationResult, Translator } from '@llmtr/core'
+import type { LangStatus } from './shared.js'
 import process from 'node:process'
 import { Box, Newline, Text, useApp } from 'ink'
-import Spinner from 'ink-spinner'
 import { useEffect, useState } from 'react'
-
-// ─── Types ───────────────────────────────────────────────────────────────────
-
-type LangStatus = 'waiting' | 'translating' | 'done' | 'error'
+import { fileLink, StatusIcon } from './shared.js'
 
 interface LangState {
   status: LangStatus
-  /** Streaming text accumulated so far */
   partial: string
-  /** Final translated text */
   text: string
   error?: string
   outputPath?: string
@@ -22,12 +17,9 @@ interface LangState {
 
 interface TranslateAppProps {
   translator: Translator
-  /** Raw text to translate (mutually exclusive with filePath) */
   text?: string
-  /** File path to translate (mutually exclusive with text) */
   filePath?: string
   options: TranslateOptions & TranslateFileOptions
-  /** When true results are printed to stderr after translation; ink renders to stdout */
   printResults?: boolean
 }
 
@@ -61,7 +53,7 @@ export function TranslateApp({ translator, text, filePath, options, printResults
           case 'done':
             return {
               ...prev,
-              [event.language]: { ...prev[event.language]!, status: 'done', text: event.text, partial: '' },
+              [event.language]: { ...prev[event.language]!, status: 'done', text: event.text, partial: '', outputPath: event.outputPath },
             }
           case 'error':
             return {
@@ -99,7 +91,6 @@ export function TranslateApp({ translator, text, filePath, options, printResults
             }
           }
         }
-        // Brief pause so user can see the ✓ marks
         setTimeout(() => exit(), 400)
       })
       .catch((err: unknown) => {
@@ -110,62 +101,101 @@ export function TranslateApp({ translator, text, filePath, options, printResults
 
   const allDone = results.length > 0
   const hasErrors = results.some(r => r.error)
+  const doneCount = results.filter(r => !r.error).length
+  const total = options.targetLanguages.length
 
   return (
-    <Box flexDirection="column" paddingX={1} paddingY={0}>
-      <Box marginBottom={1}>
-        <Text bold color="cyan">
-          {filePath ? `Translating file: ${filePath}` : 'Translating text…'}
+    <Box flexDirection="column" paddingX={1} paddingTop={1}>
+
+      {/* Header */}
+      <Box marginBottom={1} gap={1}>
+        <Text color="magenta" bold>◆ llmtr</Text>
+        <Text color="gray">
+          {filePath ? `file: ${filePath}` : `"${(text ?? '').slice(0, 40)}${(text ?? '').length > 40 ? '…' : ''}"`}
         </Text>
       </Box>
 
-      {options.targetLanguages.map(lang => (
-        <LanguageRow key={lang} language={lang} state={states[lang]} />
+      {/* Language rows */}
+      {options.targetLanguages.map((lang, i) => (
+        <LanguageRow
+          key={lang}
+          language={lang}
+          state={states[lang]}
+          index={i}
+          total={total}
+          isFile={!!filePath}
+        />
       ))}
 
+      {/* Footer */}
       {allDone && (
-        <>
-          <Newline />
-          <Text color={hasErrors ? 'yellow' : 'green'}>
-            {hasErrors ? '⚠ Completed with some errors.' : '✓ All translations complete.'}
+        <Box marginTop={1} gap={1}>
+          {hasErrors
+            ? <Text color="yellow">⚠ Done with errors</Text>
+            : <Text color="green">✓ Done</Text>}
+          <Text color="gray">
+            {doneCount}
+            /
+            {total}
+            {' '}
+            translated
           </Text>
-        </>
+        </Box>
       )}
+      <Newline />
     </Box>
   )
 }
 
 // ─── LanguageRow ─────────────────────────────────────────────────────────────
 
-function LanguageRow({ language, state }: { language: string, state?: LangState }) {
+function LanguageRow({
+  language,
+  state,
+  index,
+  total,
+  isFile,
+}: {
+  language: string
+  state?: LangState
+  index: number
+  total: number
+  isFile: boolean
+}) {
   const status = state?.status ?? 'waiting'
-  const preview = (state?.partial ?? '').slice(-40).replace(/\n/g, ' ')
+  const isLast = index === total - 1
+  const hasResult = !isFile && status === 'done' && !!state?.text && !state.outputPath
 
   return (
-    <Box flexDirection="column" marginBottom={status === 'done' && state?.text && !state.outputPath ? 1 : 0}>
-      <Box>
-        <Box width={3}>
-          {status === 'waiting' && <Text color="gray">○</Text>}
-          {status === 'translating' && (
-            <Text color="cyan">
-              <Spinner type="dots" />
-            </Text>
-          )}
-          {status === 'done' && <Text color="green">✓</Text>}
-          {status === 'error' && <Text color="red">✗</Text>}
-        </Box>
-
-        <Text bold>{language.padEnd(20)}</Text>
-
-        {status === 'translating' && preview && (
+    <Box
+      flexDirection="column"
+      borderStyle="round"
+      borderColor={
+        status === 'done'
+          ? 'green'
+          : status === 'error'
+            ? 'red'
+            : status === 'translating'
+              ? 'cyan'
+              : 'gray'
+      }
+      marginBottom={isLast ? 0 : 1}
+      paddingX={1}
+    >
+      {/* Row header */}
+      <Box gap={1}>
+        <StatusIcon status={status} />
+        <Text bold color={status === 'done' ? 'white' : status === 'error' ? 'red' : 'white'}>
+          {language}
+        </Text>
+        {!isFile && status === 'translating' && state?.partial && (
           <Text color="gray" dimColor>
-            {preview}
+            {state.partial.replace(/\n/g, ' ').slice(-50)}
           </Text>
         )}
         {status === 'done' && state?.outputPath && (
-          <Text color="gray">
-            →
-            {state.outputPath}
+          <Text color="cyan">
+            {fileLink(state.outputPath)}
           </Text>
         )}
         {status === 'error' && (
@@ -173,9 +203,10 @@ function LanguageRow({ language, state }: { language: string, state?: LangState 
         )}
       </Box>
 
-      {status === 'done' && state?.text && !state.outputPath && (
-        <Box marginLeft={3} marginTop={0}>
-          <Text>{state.text.trimEnd()}</Text>
+      {/* Result text for text translation */}
+      {hasResult && (
+        <Box marginTop={0} paddingTop={0}>
+          <Text color="white">{state!.text.trimEnd()}</Text>
         </Box>
       )}
     </Box>

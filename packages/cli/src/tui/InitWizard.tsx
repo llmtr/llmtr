@@ -1,22 +1,14 @@
 import type { ProviderName, TranslationConfig } from '@llmtr/core'
 import { writeFile } from 'node:fs/promises'
-import { DEFAULT_MODELS, ENV_API_KEYS } from '@llmtr/core'
-import { Box, Newline, Text, useApp, useInput } from 'ink'
+import { DEFAULT_FILE_NAME_PATTERN, DEFAULT_MODELS, ENV_API_KEYS } from '@llmtr/core'
+import { Box, Text, useApp, useInput } from 'ink'
 import TextInput from 'ink-text-input'
 import { useState } from 'react'
+import { LocaleSelector } from './LocaleSelector.js'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
-type Step
-  = | 'provider'
-    | 'apiKey'
-    | 'model'
-    | 'languages'
-    | 'systemPrompt'
-    | 'outputDir'
-    | 'fileNamePattern'
-    | 'confirm'
-    | 'done'
+type Step = 'provider' | 'apiKey' | 'model' | 'languages' | 'systemPrompt' | 'outputDir' | 'fileNamePattern' | 'confirm' | 'done'
 
 interface WizardState {
   provider?: ProviderName
@@ -28,6 +20,8 @@ interface WizardState {
   fileNamePattern?: string
 }
 
+// ─── Constants ───────────────────────────────────────────────────────────────
+
 const PROVIDERS: Array<{ name: ProviderName, label: string }> = [
   { name: 'openai', label: 'OpenAI' },
   { name: 'anthropic', label: 'Anthropic' },
@@ -36,20 +30,58 @@ const PROVIDERS: Array<{ name: ProviderName, label: string }> = [
   { name: 'deepseek', label: 'DeepSeek' },
 ]
 
-// ─── Component ───────────────────────────────────────────────────────────────
-
-interface InitWizardProps {
-  outputFile?: string
+const STEP_ORDER: Step[] = ['provider', 'apiKey', 'model', 'languages', 'systemPrompt', 'outputDir', 'fileNamePattern', 'confirm']
+void STEP_ORDER// Map each config field to the step that edits it
+const FIELD_STEP: Record<string, Step> = {
+  provider: 'provider',
+  apiKey: 'apiKey',
+  model: 'model',
+  locales: 'languages',
+  prompt: 'systemPrompt',
+  output: 'outputDir',
+  pattern: 'fileNamePattern',
 }
 
-export function InitWizard({ outputFile = 'llmtr.config.json' }: InitWizardProps) {
+// ─── Props ───────────────────────────────────────────────────────────────────
+
+export interface InitWizardProps {
+  outputFile?: string
+  /** Pre-fill wizard fields from an existing config file */
+  initialConfig?: Partial<TranslationConfig>
+}
+
+function configToWizardState(config: Partial<TranslationConfig>): WizardState {
+  return {
+    provider: config.provider,
+    apiKey: config.apiKey,
+    model: config.model,
+    languages: config.targetLanguages?.length ? config.targetLanguages : undefined,
+    systemPrompt: config.systemPrompt,
+    outputDir: config.output?.directory,
+    fileNamePattern: config.output?.fileNamePattern,
+  }
+}
+
+// ─── Component ───────────────────────────────────────────────────────────────
+
+export function InitWizard({ outputFile = 'llmtr.config.json', initialConfig }: InitWizardProps) {
   const { exit } = useApp()
+  const isEditing = !!initialConfig
+
   const [step, setStep] = useState<Step>('provider')
-  const [selectedIdx, setSelectedIdx] = useState(0)
+  const [selectedIdx, setSelectedIdx] = useState(
+    initialConfig?.provider ? Math.max(0, PROVIDERS.findIndex(p => p.name === initialConfig.provider)) : 0,
+  )
   const [inputValue, setInputValue] = useState('')
-  const [state, setState] = useState<WizardState>({})
+  const [state, setState] = useState<WizardState>(initialConfig ? configToWizardState(initialConfig) : {})
   const [savedPath, setSavedPath] = useState<string | null>(null)
   const [saveError, setSaveError] = useState<string | null>(null)
+
+  const advance = (nextStep: Step, patch: Partial<WizardState>) => {
+    setState(s => ({ ...s, ...patch }))
+    setInputValue('')
+    setStep(nextStep)
+  }
 
   useInput((_input, key) => {
     if (step === 'provider') {
@@ -64,7 +96,6 @@ export function InitWizard({ outputFile = 'llmtr.config.json' }: InitWizardProps
         setStep('apiKey')
       }
     }
-
     if (step === 'confirm') {
       if (key.return || _input.toLowerCase() === 'y') {
         saveConfig(state, outputFile)
@@ -79,196 +110,221 @@ export function InitWizard({ outputFile = 'llmtr.config.json' }: InitWizardProps
             setTimeout(() => exit, 1200)
           })
       }
-      if (_input.toLowerCase() === 'n') {
+      if (_input.toLowerCase() === 'n')
         exit()
-      }
     }
   })
 
-  const advance = (nextStep: Step, patch: Partial<WizardState>) => {
-    setState(s => ({ ...s, ...patch }))
-    setInputValue('')
-    setStep(nextStep)
-  }
+  // Derive display values for all fields regardless of step
+  const provider = state.provider
+  const cardFields: Array<{ key: string, label: string, value: string, isEmpty: boolean }> = [
+    {
+      key: 'provider',
+      label: 'provider',
+      value: provider ?? '—',
+      isEmpty: !provider,
+    },
+    {
+      key: 'apiKey',
+      label: 'apiKey',
+      value: state.apiKey ? '••••••••' : '(env var)',
+      isEmpty: !state.apiKey,
+    },
+    {
+      key: 'model',
+      label: 'model',
+      value: state.model ?? (provider ? DEFAULT_MODELS[provider] : '—'),
+      isEmpty: !state.model,
+    },
+    {
+      key: 'locales',
+      label: 'locales',
+      value: state.languages?.join(', ') ?? '—',
+      isEmpty: !state.languages,
+    },
+    {
+      key: 'prompt',
+      label: 'prompt',
+      value: state.systemPrompt ?? '(default)',
+      isEmpty: !state.systemPrompt,
+    },
+    {
+      key: 'output',
+      label: 'output',
+      value: state.outputDir ?? '(same as input)',
+      isEmpty: !state.outputDir,
+    },
+    {
+      key: 'pattern',
+      label: 'pattern',
+      value: state.fileNamePattern ?? DEFAULT_FILE_NAME_PATTERN,
+      isEmpty: !state.fileNamePattern,
+    },
+  ]
+
+  const isDone = step === 'done'
+  const cardBorderColor = isDone ? (savedPath ? 'green' : 'red') : step === 'confirm' ? 'cyan' : 'gray'
 
   return (
-    <Box flexDirection="column" paddingX={1}>
-      <Box marginBottom={1}>
-        <Text bold color="cyan">llmtr init</Text>
-        <Text color="gray"> — interactive config setup</Text>
+    <Box flexDirection="column" paddingX={1} paddingY={1}>
+
+      {/* ── Header ── */}
+      <Box marginBottom={1} gap={1}>
+        <Text bold color="magenta">◆ llmtr config</Text>
+        <Text color="gray">{isEditing ? '— editing' : '— new'}</Text>
+        <Text color="gray" dimColor>{outputFile}</Text>
       </Box>
 
-      {/* ── Already-answered steps (summary) ── */}
-      {state.provider && step !== 'provider' && (
-        <AnsweredRow label="Provider" value={`${state.provider} (default model: ${DEFAULT_MODELS[state.provider]})`} />
-      )}
-      {state.apiKey !== undefined && step !== 'apiKey' && (
-        <AnsweredRow label="API Key" value="••••••••" />
-      )}
-      {state.model !== undefined && step !== 'model' && (
-        <AnsweredRow label="Model" value={state.model || `(default: ${DEFAULT_MODELS[state.provider!]})`} />
-      )}
-      {state.languages !== undefined && step !== 'languages' && (
-        <AnsweredRow label="Languages" value={state.languages.join(', ')} />
-      )}
-      {state.systemPrompt !== undefined && step !== 'systemPrompt' && (
-        <AnsweredRow label="System Prompt" value={state.systemPrompt || '(none)'} />
-      )}
-      {state.outputDir !== undefined && step !== 'outputDir' && (
-        <AnsweredRow label="Output Dir" value={state.outputDir || '(same as input)'} />
-      )}
-
-      <Newline />
-
-      {/* ── Current step ── */}
-      {step === 'provider' && (
-        <Box flexDirection="column">
-          <Text bold>Select AI provider:</Text>
-          {PROVIDERS.map((p, i) => (
-            <Box key={p.name}>
-              <Text color={i === selectedIdx ? 'cyan' : undefined}>
-                {i === selectedIdx ? '❯ ' : '  '}
-                {p.label}
-                {'  '}
+      {/* ── Unified config card (always visible) ── */}
+      <Box flexDirection="column" borderStyle="round" borderColor={cardBorderColor} paddingX={1} marginBottom={1}>
+        {cardFields.map(({ key, label, value, isEmpty }) => {
+          const isActive = FIELD_STEP[key] === step
+          return (
+            <Box key={key} gap={1}>
+              <Text color={isActive ? 'cyan' : 'gray'} bold={isActive}>
+                {isActive ? '❯' : ' '}
+                {' '}
+                {label.padEnd(10)}
               </Text>
-              <Text color="gray">{DEFAULT_MODELS[p.name]}</Text>
+              <Text
+                color={isActive ? 'cyan' : isEmpty ? 'gray' : 'white'}
+                dimColor={!isActive && isEmpty}
+                bold={isActive}
+              >
+                {value}
+              </Text>
+            </Box>
+          )
+        })}
+      </Box>
+
+      {/* ── Active step input ── */}
+      {step === 'provider' && (
+        <Box flexDirection="column" marginTop={1}>
+          {PROVIDERS.map((p, i) => (
+            <Box key={p.name} gap={2}>
+              <Text color={i === selectedIdx ? 'cyan' : 'gray'} bold={i === selectedIdx}>
+                {i === selectedIdx ? '❯' : ' '}
+                {' '}
+                {p.label.padEnd(14)}
+              </Text>
+              <Text color="gray" dimColor>{DEFAULT_MODELS[p.name]}</Text>
             </Box>
           ))}
         </Box>
       )}
 
       {step === 'apiKey' && (
-        <Box>
-          <Text bold>
-            {ENV_API_KEYS[state.provider!]}
-            {' '}
-            (or press Enter to use env var):
-            {' '}
-          </Text>
+        <Question label={ENV_API_KEYS[state.provider!]} hint={isEditing ? 'Enter to keep existing' : 'Enter to use env var'}>
           <TextInput
             value={inputValue}
             onChange={setInputValue}
             mask="*"
-            onSubmit={value => advance('model', { apiKey: value || undefined })}
+            placeholder={isEditing ? '(keep existing)' : ''}
+            onSubmit={v => advance('model', { apiKey: v || state.apiKey })}
           />
-        </Box>
+        </Question>
       )}
 
       {step === 'model' && (
-        <Box>
-          <Text bold>
-            Model name (Enter for default "
-            {DEFAULT_MODELS[state.provider!]}
-            "):
-            {' '}
-          </Text>
+        <Question label="Model name" hint={`default: ${state.model ?? DEFAULT_MODELS[state.provider!]}`}>
           <TextInput
             value={inputValue}
             onChange={setInputValue}
-            onSubmit={value => advance('languages', { model: value || undefined })}
+            placeholder={state.model ?? DEFAULT_MODELS[state.provider!]}
+            onSubmit={v => advance('languages', { model: v || state.model || undefined })}
           />
-        </Box>
+        </Question>
       )}
 
       {step === 'languages' && (
-        <Box flexDirection="column">
-          <Text bold>Target languages (comma-separated, e.g. French, German, Japanese):</Text>
-          <Box>
-            <Text color="gray">❯ </Text>
-            <TextInput
-              value={inputValue}
-              onChange={setInputValue}
-              onSubmit={(value) => {
-                const langs = value.split(',').map(l => l.trim()).filter(Boolean)
-                if (langs.length > 0)
-                  advance('systemPrompt', { languages: langs })
-              }}
-            />
-          </Box>
-        </Box>
+        <LocaleSelector
+          initialSelected={state.languages}
+          onConfirm={langs => advance('systemPrompt', { languages: langs })}
+        />
       )}
 
       {step === 'systemPrompt' && (
-        <Box flexDirection="column">
-          <Text bold>System prompt (Enter to skip):</Text>
-          <Box>
-            <Text color="gray">❯ </Text>
-            <TextInput
-              value={inputValue}
-              onChange={setInputValue}
-              onSubmit={value => advance('outputDir', { systemPrompt: value || undefined })}
-            />
-          </Box>
-        </Box>
+        <Question label="System prompt" hint="Enter to skip">
+          <TextInput
+            value={inputValue}
+            onChange={setInputValue}
+            placeholder={state.systemPrompt ?? '(none)'}
+            onSubmit={v => advance('outputDir', { systemPrompt: v || state.systemPrompt || undefined })}
+          />
+        </Question>
       )}
 
       {step === 'outputDir' && (
-        <Box flexDirection="column">
-          <Text bold>Output directory (Enter for same dir as input file):</Text>
-          <Box>
-            <Text color="gray">❯ </Text>
-            <TextInput
-              value={inputValue}
-              onChange={setInputValue}
-              onSubmit={value => advance('fileNamePattern', { outputDir: value || undefined })}
-            />
-          </Box>
-        </Box>
+        <Question label="Output directory" hint="Enter for same dir as input">
+          <TextInput
+            value={inputValue}
+            onChange={setInputValue}
+            placeholder={state.outputDir ?? '(same as input)'}
+            onSubmit={v => advance('fileNamePattern', { outputDir: v || state.outputDir || undefined })}
+          />
+        </Question>
       )}
 
       {step === 'fileNamePattern' && (
-        <Box flexDirection="column">
-          <Text bold>
-            File name pattern (Enter for default "
-            {'{name}.{lang}{ext}'}
-            "):
-          </Text>
-          <Box>
-            <Text color="gray">❯ </Text>
-            <TextInput
-              value={inputValue}
-              onChange={setInputValue}
-              onSubmit={value => advance('confirm', { fileNamePattern: value || undefined })}
-            />
-          </Box>
-        </Box>
+        <Question label="File name pattern" hint="Enter for default">
+          <TextInput
+            value={inputValue}
+            onChange={setInputValue}
+            placeholder={state.fileNamePattern ?? DEFAULT_FILE_NAME_PATTERN}
+            onSubmit={v => advance('confirm', { fileNamePattern: v || state.fileNamePattern || undefined })}
+          />
+        </Question>
       )}
 
       {step === 'confirm' && (
-        <Box flexDirection="column">
-          <Text bold>Save to </Text>
+        <Box gap={1}>
+          <Text bold>Save to</Text>
           <Text color="cyan">{outputFile}</Text>
-          <Text bold>? (Y/n) </Text>
+          <Text color="gray">? (Y/n)</Text>
         </Box>
       )}
 
       {step === 'done' && savedPath && (
-        <Text color="green">
-          ✓ Config saved to
-          {savedPath}
-        </Text>
+        <Box gap={1}>
+          <Text color="green" bold>✓</Text>
+          <Text>Config saved to</Text>
+          <Text color="cyan">{savedPath}</Text>
+        </Box>
       )}
       {step === 'done' && saveError && (
-        <Text color="red">
-          ✗ Failed to save:
-          {saveError}
-        </Text>
+        <Box gap={1}>
+          <Text color="red" bold>✗</Text>
+          <Text color="red">{saveError}</Text>
+        </Box>
       )}
+    </Box>
+  )
+}
+
+// ─── Sub-components ───────────────────────────────────────────────────────────
+
+function Question({ label, hint, children }: { label: string, hint?: string, children: React.ReactNode }) {
+  return (
+    <Box flexDirection="column" marginTop={1}>
+      <Box gap={1}>
+        <Text bold>{label}</Text>
+        {hint && (
+          <Text color="gray" dimColor>
+            ·
+            {hint}
+          </Text>
+        )}
+      </Box>
+      <Box gap={1}>
+        <Text color="cyan">❯</Text>
+        {children}
+      </Box>
     </Box>
   )
 }
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
-
-function AnsweredRow({ label, value }: { label: string, value: string }) {
-  return (
-    <Box>
-      <Text color="green">✓ </Text>
-      <Text bold>{`${label}: `}</Text>
-      <Text color="gray">{value}</Text>
-    </Box>
-  )
-}
 
 async function saveConfig(state: WizardState, outputFile: string): Promise<string> {
   const config: Partial<TranslationConfig> = {
@@ -282,7 +338,6 @@ async function saveConfig(state: WizardState, outputFile: string): Promise<strin
       ...(state.fileNamePattern ? { fileNamePattern: state.fileNamePattern } : {}),
     },
   }
-
   await writeFile(outputFile, `${JSON.stringify(config, null, 2)}\n`, 'utf-8')
   return outputFile
 }

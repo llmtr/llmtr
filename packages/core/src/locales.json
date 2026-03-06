@@ -1,0 +1,4526 @@
+[
+  {
+    "locale": "aa-ER",
+    "language": {
+      "name": "Afar",
+      "name_local": "Afar",
+      "iso_639_1": "aa"
+    },
+    "country": {
+      "flag": "🇪🇷",
+      "name": "Eritrea"
+    }
+  },
+  {
+    "locale": "af-NA",
+    "language": {
+      "name": "Afrikaans",
+      "name_local": "Afrikaans",
+      "iso_639_1": "af"
+    },
+    "country": {
+      "flag": "🇳🇦",
+      "name": "Namibia"
+    }
+  },
+  {
+    "locale": "af-ZA",
+    "language": {
+      "name": "Afrikaans",
+      "name_local": "Afrikaans",
+      "iso_639_1": "af"
+    },
+    "country": {
+      "flag": "🇿🇦",
+      "name": "South Africa"
+    }
+  },
+  {
+    "locale": "am-ET",
+    "language": {
+      "name": "Amharic",
+      "name_local": "አማርኛ",
+      "iso_639_1": "am"
+    },
+    "country": {
+      "flag": "🇪🇹",
+      "name": "Ethiopia"
+    }
+  },
+  {
+    "locale": "ar-EG",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇪🇬",
+      "name": "Egypt"
+    }
+  },
+  {
+    "locale": "ar-DZ",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇩🇿",
+      "name": "Algeria"
+    }
+  },
+  {
+    "locale": "ar-BH",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇧🇭",
+      "name": "Bahrain"
+    }
+  },
+  {
+    "locale": "ar-DJ",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇩🇯",
+      "name": "Djibouti"
+    }
+  },
+  {
+    "locale": "ar-ER",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇪🇷",
+      "name": "Eritrea"
+    }
+  },
+  {
+    "locale": "ar-IQ",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇮🇶",
+      "name": "Iraq"
+    }
+  },
+  {
+    "locale": "ar-IL",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇮🇱",
+      "name": "Israel"
+    }
+  },
+  {
+    "locale": "ar-YE",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇾🇪",
+      "name": "Yemen"
+    }
+  },
+  {
+    "locale": "ar-JO",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇯🇴",
+      "name": "Jordan"
+    }
+  },
+  {
+    "locale": "ar-QA",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇶🇦",
+      "name": "Qatar"
+    }
+  },
+  {
+    "locale": "ar-KM",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇰🇲",
+      "name": "Comoros"
+    }
+  },
+  {
+    "locale": "ar-KW",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇰🇼",
+      "name": "Kuwait"
+    }
+  },
+  {
+    "locale": "ar-LB",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇱🇧",
+      "name": "Lebanon"
+    }
+  },
+  {
+    "locale": "ar-LY",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇱🇾",
+      "name": "Libya"
+    }
+  },
+  {
+    "locale": "ar-MA",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇲🇦",
+      "name": "Morocco"
+    }
+  },
+  {
+    "locale": "ar-MR",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇲🇷",
+      "name": "Mauritania"
+    }
+  },
+  {
+    "locale": "ar-OM",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇴🇲",
+      "name": "Oman"
+    }
+  },
+  {
+    "locale": "ar-PS",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇵🇸",
+      "name": "Palestine"
+    }
+  },
+  {
+    "locale": "ar-SA",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇸🇦",
+      "name": "Saudi Arabia"
+    }
+  },
+  {
+    "locale": "ar-SO",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇸🇴",
+      "name": "Somalia"
+    }
+  },
+  {
+    "locale": "ar-SD",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇸🇩",
+      "name": "Sudan"
+    }
+  },
+  {
+    "locale": "ar-SY",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇸🇾",
+      "name": "Syria"
+    }
+  },
+  {
+    "locale": "ar-TD",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇹🇩",
+      "name": "Chad"
+    }
+  },
+  {
+    "locale": "ar-TN",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇹🇳",
+      "name": "Tunisia"
+    }
+  },
+  {
+    "locale": "ar-AE",
+    "language": {
+      "name": "Arabic",
+      "name_local": "العربية",
+      "iso_639_1": "ar"
+    },
+    "country": {
+      "flag": "🇦🇪",
+      "name": "United Arab Emirates"
+    }
+  },
+  {
+    "locale": "ay-BO",
+    "language": {
+      "name": "Aymara",
+      "name_local": "aymar aru",
+      "iso_639_1": "ay"
+    },
+    "country": {
+      "flag": "🇧🇴",
+      "name": "Bolivia"
+    }
+  },
+  {
+    "locale": "az-AZ",
+    "language": {
+      "name": "Azerbaijani",
+      "name_local": "azərbaycan dili",
+      "iso_639_1": "az"
+    },
+    "country": {
+      "flag": "🇦🇿",
+      "name": "Azerbaijan"
+    }
+  },
+  {
+    "locale": "be-BY",
+    "language": {
+      "name": "Belarusian",
+      "name_local": "беларуская мова",
+      "iso_639_1": "be"
+    },
+    "country": {
+      "flag": "🇧🇾",
+      "name": "Belarus"
+    }
+  },
+  {
+    "locale": "bn-BD",
+    "language": {
+      "name": "Bengali",
+      "name_local": "বাংলা",
+      "iso_639_1": "bn"
+    },
+    "country": {
+      "flag": "🇧🇩",
+      "name": "Bangladesh"
+    }
+  },
+  {
+    "locale": "bi-VU",
+    "language": {
+      "name": "Bislama",
+      "name_local": "Bislama",
+      "iso_639_1": "bi"
+    },
+    "country": {
+      "flag": "🇻🇺",
+      "name": "Vanuatu"
+    }
+  },
+  {
+    "locale": "bs-BA",
+    "language": {
+      "name": "Bosnian",
+      "name_local": "bosanski jezik",
+      "iso_639_1": "bs"
+    },
+    "country": {
+      "flag": "🇧🇦",
+      "name": "Bosnia and Herzegovina"
+    }
+  },
+  {
+    "locale": "bs-ME",
+    "language": {
+      "name": "Bosnian",
+      "name_local": "bosanski jezik",
+      "iso_639_1": "bs"
+    },
+    "country": {
+      "flag": "🇲🇪",
+      "name": "Montenegro"
+    }
+  },
+  {
+    "locale": "bg-BG",
+    "language": {
+      "name": "Bulgarian",
+      "name_local": "български език",
+      "iso_639_1": "bg"
+    },
+    "country": {
+      "flag": "🇧🇬",
+      "name": "Bulgaria"
+    }
+  },
+  {
+    "locale": "byn-ER",
+    "language": {
+      "name": "Bilen",
+      "name_local": "ብሊና",
+      "iso_639_1": ""
+    },
+    "country": {
+      "flag": "🇪🇷",
+      "name": "Eritrea"
+    }
+  },
+  {
+    "locale": "ca-AD",
+    "language": {
+      "name": "Catalan",
+      "name_local": "català",
+      "iso_639_1": "ca"
+    },
+    "country": {
+      "flag": "🇦🇩",
+      "name": "Andorra"
+    }
+  },
+  {
+    "locale": "cs-CZ",
+    "language": {
+      "name": "Czech",
+      "name_local": "čeština",
+      "iso_639_1": "cs"
+    },
+    "country": {
+      "flag": "🇨🇿",
+      "name": "Czechia"
+    }
+  },
+  {
+    "locale": "ch-GU",
+    "language": {
+      "name": "Chamorro",
+      "name_local": "Chamoru",
+      "iso_639_1": "ch"
+    },
+    "country": {
+      "flag": "🇬🇺",
+      "name": "Guam"
+    }
+  },
+  {
+    "locale": "ch-MP",
+    "language": {
+      "name": "Chamorro",
+      "name_local": "Chamoru",
+      "iso_639_1": "ch"
+    },
+    "country": {
+      "flag": "🇲🇵",
+      "name": "Northern Mariana Islands"
+    }
+  },
+  {
+    "locale": "da-DK",
+    "language": {
+      "name": "Danish",
+      "name_local": "dansk",
+      "iso_639_1": "da"
+    },
+    "country": {
+      "flag": "🇩🇰",
+      "name": "Denmark"
+    }
+  },
+  {
+    "locale": "de-BE",
+    "language": {
+      "name": "German",
+      "name_local": "Deutsch",
+      "iso_639_1": "de"
+    },
+    "country": {
+      "flag": "🇧🇪",
+      "name": "Belgium"
+    }
+  },
+  {
+    "locale": "de-DE",
+    "language": {
+      "name": "German",
+      "name_local": "Deutsch",
+      "iso_639_1": "de"
+    },
+    "country": {
+      "flag": "🇩🇪",
+      "name": "Germany"
+    }
+  },
+  {
+    "locale": "de-LI",
+    "language": {
+      "name": "German",
+      "name_local": "Deutsch",
+      "iso_639_1": "de"
+    },
+    "country": {
+      "flag": "🇱🇮",
+      "name": "Liechtenstein"
+    }
+  },
+  {
+    "locale": "de-LU",
+    "language": {
+      "name": "German",
+      "name_local": "Deutsch",
+      "iso_639_1": "de"
+    },
+    "country": {
+      "flag": "🇱🇺",
+      "name": "Luxembourg"
+    }
+  },
+  {
+    "locale": "de-AT",
+    "language": {
+      "name": "German",
+      "name_local": "Deutsch",
+      "iso_639_1": "de"
+    },
+    "country": {
+      "flag": "🇦🇹",
+      "name": "Austria"
+    }
+  },
+  {
+    "locale": "de-CH",
+    "language": {
+      "name": "German",
+      "name_local": "Deutsch",
+      "iso_639_1": "de"
+    },
+    "country": {
+      "flag": "🇨🇭",
+      "name": "Switzerland"
+    }
+  },
+  {
+    "locale": "de-VA",
+    "language": {
+      "name": "German",
+      "name_local": "Deutsch",
+      "iso_639_1": "de"
+    },
+    "country": {
+      "flag": "🇻🇦",
+      "name": "Vatican City"
+    }
+  },
+  {
+    "locale": "dv-MV",
+    "language": {
+      "name": "Divehi",
+      "name_local": "ދިވެހި",
+      "iso_639_1": "dv"
+    },
+    "country": {
+      "flag": "🇲🇻",
+      "name": "Maldives"
+    }
+  },
+  {
+    "locale": "dz-BT",
+    "language": {
+      "name": "Dzongkha",
+      "name_local": "རྫོང་ཁ",
+      "iso_639_1": "dz"
+    },
+    "country": {
+      "flag": "🇧🇹",
+      "name": "Bhutan"
+    }
+  },
+  {
+    "locale": "el-GR",
+    "language": {
+      "name": "Greek (modern)",
+      "name_local": "ελληνικά",
+      "iso_639_1": "el"
+    },
+    "country": {
+      "flag": "🇬🇷",
+      "name": "Greece"
+    }
+  },
+  {
+    "locale": "el-CY",
+    "language": {
+      "name": "Greek (modern)",
+      "name_local": "ελληνικά",
+      "iso_639_1": "el"
+    },
+    "country": {
+      "flag": "🇨🇾",
+      "name": "Cyprus"
+    }
+  },
+  {
+    "locale": "en-AS",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇦🇸",
+      "name": "American Samoa"
+    }
+  },
+  {
+    "locale": "en-AI",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇦🇮",
+      "name": "Anguilla"
+    }
+  },
+  {
+    "locale": "en-AQ",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇦🇶",
+      "name": "Antarctica"
+    }
+  },
+  {
+    "locale": "en-AG",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇦🇬",
+      "name": "Antigua and Barbuda"
+    }
+  },
+  {
+    "locale": "en-AU",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇦🇺",
+      "name": "Australia"
+    }
+  },
+  {
+    "locale": "en-BS",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇧🇸",
+      "name": "Bahamas"
+    }
+  },
+  {
+    "locale": "en-BB",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇧🇧",
+      "name": "Barbados"
+    }
+  },
+  {
+    "locale": "en-BZ",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇧🇿",
+      "name": "Belize"
+    }
+  },
+  {
+    "locale": "en-BM",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇧🇲",
+      "name": "Bermuda"
+    }
+  },
+  {
+    "locale": "en-BW",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇧🇼",
+      "name": "Botswana"
+    }
+  },
+  {
+    "locale": "en-IO",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇮🇴",
+      "name": "British Indian Ocean Territory"
+    }
+  },
+  {
+    "locale": "en-CK",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇨🇰",
+      "name": "Cook Islands"
+    }
+  },
+  {
+    "locale": "en-CW",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇨🇼",
+      "name": "Curacao"
+    }
+  },
+  {
+    "locale": "en-DM",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇩🇲",
+      "name": "Dominica"
+    }
+  },
+  {
+    "locale": "en-ER",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇪🇷",
+      "name": "Eritrea"
+    }
+  },
+  {
+    "locale": "en-SZ",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇸🇿",
+      "name": "Eswatini"
+    }
+  },
+  {
+    "locale": "en-FK",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇫🇰",
+      "name": "Falkland Islands"
+    }
+  },
+  {
+    "locale": "en-FJ",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇫🇯",
+      "name": "Fiji"
+    }
+  },
+  {
+    "locale": "en-FM",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇫🇲",
+      "name": "Federated States of Micronesia"
+    }
+  },
+  {
+    "locale": "en-GM",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇬🇲",
+      "name": "Gambia"
+    }
+  },
+  {
+    "locale": "en-GH",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇬🇭",
+      "name": "Ghana"
+    }
+  },
+  {
+    "locale": "en-GI",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇬🇮",
+      "name": "Gibraltar"
+    }
+  },
+  {
+    "locale": "en-GD",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇬🇩",
+      "name": "Grenada"
+    }
+  },
+  {
+    "locale": "en-GU",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇬🇺",
+      "name": "Guam"
+    }
+  },
+  {
+    "locale": "en-GG",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇬🇬",
+      "name": "Guernsey"
+    }
+  },
+  {
+    "locale": "en-GY",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇬🇾",
+      "name": "Guyana"
+    }
+  },
+  {
+    "locale": "en-HM",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇭🇲",
+      "name": "Heard Island and McDonald Islands"
+    }
+  },
+  {
+    "locale": "en-HK",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇭🇰",
+      "name": "Hong Kong"
+    }
+  },
+  {
+    "locale": "en-IN",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇮🇳",
+      "name": "India"
+    }
+  },
+  {
+    "locale": "en-IM",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇮🇲",
+      "name": "Isle of Man"
+    }
+  },
+  {
+    "locale": "en-IE",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇮🇪",
+      "name": "Ireland"
+    }
+  },
+  {
+    "locale": "en-JM",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇯🇲",
+      "name": "Jamaica"
+    }
+  },
+  {
+    "locale": "en-JE",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇯🇪",
+      "name": "Jersey"
+    }
+  },
+  {
+    "locale": "en-VG",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇻🇬",
+      "name": "British Virgin Islands"
+    }
+  },
+  {
+    "locale": "en-VI",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇻🇮",
+      "name": "Virgin Islands"
+    }
+  },
+  {
+    "locale": "en-KY",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇰🇾",
+      "name": "Cayman Islands"
+    }
+  },
+  {
+    "locale": "en-CM",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇨🇲",
+      "name": "Cameroon"
+    }
+  },
+  {
+    "locale": "en-CA",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇨🇦",
+      "name": "Canada"
+    }
+  },
+  {
+    "locale": "en-KE",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇰🇪",
+      "name": "Kenya"
+    }
+  },
+  {
+    "locale": "en-KI",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇰🇮",
+      "name": "Kiribati"
+    }
+  },
+  {
+    "locale": "en-UM",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇺🇲",
+      "name": "United States Minor Outlying Islands"
+    }
+  },
+  {
+    "locale": "en-CC",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇨🇨",
+      "name": "Cocos (Keeling) Islands"
+    }
+  },
+  {
+    "locale": "en-LS",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇱🇸",
+      "name": "Lesotho"
+    }
+  },
+  {
+    "locale": "en-LR",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇱🇷",
+      "name": "Liberia"
+    }
+  },
+  {
+    "locale": "en-MW",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇲🇼",
+      "name": "Malawi"
+    }
+  },
+  {
+    "locale": "en-MT",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇲🇹",
+      "name": "Malta"
+    }
+  },
+  {
+    "locale": "en-MH",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇲🇭",
+      "name": "Marshall Islands"
+    }
+  },
+  {
+    "locale": "en-MU",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇲🇺",
+      "name": "Mauritius"
+    }
+  },
+  {
+    "locale": "en-MS",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇲🇸",
+      "name": "Montserrat"
+    }
+  },
+  {
+    "locale": "en-NA",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇳🇦",
+      "name": "Namibia"
+    }
+  },
+  {
+    "locale": "en-NR",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇳🇷",
+      "name": "Nauru"
+    }
+  },
+  {
+    "locale": "en-NZ",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇳🇿",
+      "name": "New Zealand"
+    }
+  },
+  {
+    "locale": "en-NG",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇳🇬",
+      "name": "Nigeria"
+    }
+  },
+  {
+    "locale": "en-NU",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇳🇺",
+      "name": "Niue"
+    }
+  },
+  {
+    "locale": "en-MP",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇲🇵",
+      "name": "Northern Mariana Islands"
+    }
+  },
+  {
+    "locale": "en-NF",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇳🇫",
+      "name": "Norfolk Island"
+    }
+  },
+  {
+    "locale": "en-PK",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇵🇰",
+      "name": "Pakistan"
+    }
+  },
+  {
+    "locale": "en-PW",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇵🇼",
+      "name": "Palau"
+    }
+  },
+  {
+    "locale": "en-PG",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇵🇬",
+      "name": "Papua New Guinea"
+    }
+  },
+  {
+    "locale": "en-PH",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇵🇭",
+      "name": "Philippines"
+    }
+  },
+  {
+    "locale": "en-PN",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇵🇳",
+      "name": "Pitcairn Islands"
+    }
+  },
+  {
+    "locale": "en-PR",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇵🇷",
+      "name": "Puerto Rico"
+    }
+  },
+  {
+    "locale": "en-RW",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇷🇼",
+      "name": "Rwanda"
+    }
+  },
+  {
+    "locale": "en-MF",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇲🇫",
+      "name": "Saint Martin"
+    }
+  },
+  {
+    "locale": "en-SB",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇸🇧",
+      "name": "Solomon Islands"
+    }
+  },
+  {
+    "locale": "en-ZM",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇿🇲",
+      "name": "Zambia"
+    }
+  },
+  {
+    "locale": "en-WS",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇼🇸",
+      "name": "Samoa"
+    }
+  },
+  {
+    "locale": "en-SC",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇸🇨",
+      "name": "Seychelles"
+    }
+  },
+  {
+    "locale": "en-SL",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇸🇱",
+      "name": "Sierra Leone"
+    }
+  },
+  {
+    "locale": "en-ZW",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇿🇼",
+      "name": "Zimbabwe"
+    }
+  },
+  {
+    "locale": "en-SG",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇸🇬",
+      "name": "Singapore"
+    }
+  },
+  {
+    "locale": "en-SX",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇸🇽",
+      "name": "Sint Maarten"
+    }
+  },
+  {
+    "locale": "en-SH",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇸🇭",
+      "name": "Saint Helena, Ascension and Tristan da Cunha"
+    }
+  },
+  {
+    "locale": "en-KN",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇰🇳",
+      "name": "Saint Kitts and Nevis"
+    }
+  },
+  {
+    "locale": "en-LC",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇱🇨",
+      "name": "Saint Lucia"
+    }
+  },
+  {
+    "locale": "en-VC",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇻🇨",
+      "name": "Saint Vincent and the Grenadines"
+    }
+  },
+  {
+    "locale": "en-ZA",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇿🇦",
+      "name": "South Africa"
+    }
+  },
+  {
+    "locale": "en-SD",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇸🇩",
+      "name": "Sudan"
+    }
+  },
+  {
+    "locale": "en-GS",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇬🇸",
+      "name": "South Georgia and South Sandwich Islands"
+    }
+  },
+  {
+    "locale": "en-SS",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇸🇸",
+      "name": "South Sudan"
+    }
+  },
+  {
+    "locale": "en-TZ",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇹🇿",
+      "name": "Tanzania"
+    }
+  },
+  {
+    "locale": "en-TK",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇹🇰",
+      "name": "Tokelau"
+    }
+  },
+  {
+    "locale": "en-TO",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇹🇴",
+      "name": "Tonga"
+    }
+  },
+  {
+    "locale": "en-TT",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇹🇹",
+      "name": "Trinidad and Tobago"
+    }
+  },
+  {
+    "locale": "en-TC",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇹🇨",
+      "name": "Turks and Caicos Islands"
+    }
+  },
+  {
+    "locale": "en-TV",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇹🇻",
+      "name": "Tuvalu"
+    }
+  },
+  {
+    "locale": "en-UG",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇺🇬",
+      "name": "Uganda"
+    }
+  },
+  {
+    "locale": "en-VU",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇻🇺",
+      "name": "Vanuatu"
+    }
+  },
+  {
+    "locale": "en-US",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇺🇸",
+      "name": "United States of America"
+    }
+  },
+  {
+    "locale": "en-GB",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇬🇧",
+      "name": "United Kingdom"
+    }
+  },
+  {
+    "locale": "en-CX",
+    "language": {
+      "name": "English",
+      "name_local": "English",
+      "iso_639_1": "en"
+    },
+    "country": {
+      "flag": "🇨🇽",
+      "name": "Christmas Island"
+    }
+  },
+  {
+    "locale": "et-EE",
+    "language": {
+      "name": "Estonian",
+      "name_local": "eesti",
+      "iso_639_1": "et"
+    },
+    "country": {
+      "flag": "🇪🇪",
+      "name": "Estonia"
+    }
+  },
+  {
+    "locale": "fan-GQ",
+    "language": {
+      "name": "Fang",
+      "name_local": "Fang",
+      "iso_639_1": ""
+    },
+    "country": {
+      "flag": "🇬🇶",
+      "name": "Equatorial Guinea"
+    }
+  },
+  {
+    "locale": "fo-FO",
+    "language": {
+      "name": "Faroese",
+      "name_local": "føroyskt",
+      "iso_639_1": "fo"
+    },
+    "country": {
+      "flag": "🇫🇴",
+      "name": "Faroe Islands"
+    }
+  },
+  {
+    "locale": "fa-IR",
+    "language": {
+      "name": "Persian (Farsi)",
+      "name_local": "فارسی",
+      "iso_639_1": "fa"
+    },
+    "country": {
+      "flag": "🇮🇷",
+      "name": "Iran"
+    }
+  },
+  {
+    "locale": "fj-FJ",
+    "language": {
+      "name": "Fijian",
+      "name_local": "vosa Vakaviti",
+      "iso_639_1": "fj"
+    },
+    "country": {
+      "flag": "🇫🇯",
+      "name": "Fiji"
+    }
+  },
+  {
+    "locale": "fi-FI",
+    "language": {
+      "name": "Finnish",
+      "name_local": "suomi",
+      "iso_639_1": "fi"
+    },
+    "country": {
+      "flag": "🇫🇮",
+      "name": "Finland"
+    }
+  },
+  {
+    "locale": "fr-GQ",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇬🇶",
+      "name": "Equatorial Guinea"
+    }
+  },
+  {
+    "locale": "fr-BE",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇧🇪",
+      "name": "Belgium"
+    }
+  },
+  {
+    "locale": "fr-BJ",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇧🇯",
+      "name": "Benin"
+    }
+  },
+  {
+    "locale": "fr-BF",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇧🇫",
+      "name": "Burkina Faso"
+    }
+  },
+  {
+    "locale": "fr-BI",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇧🇮",
+      "name": "Burundi"
+    }
+  },
+  {
+    "locale": "fr-CD",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇨🇩",
+      "name": "Democratic Republic of the Congo"
+    }
+  },
+  {
+    "locale": "fr-DJ",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇩🇯",
+      "name": "Djibouti"
+    }
+  },
+  {
+    "locale": "fr-CI",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇨🇮",
+      "name": "Ivory Coast"
+    }
+  },
+  {
+    "locale": "fr-FR",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇫🇷",
+      "name": "France"
+    }
+  },
+  {
+    "locale": "fr-GF",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇬🇫",
+      "name": "French Guiana"
+    }
+  },
+  {
+    "locale": "fr-PF",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇵🇫",
+      "name": "French Polynesia"
+    }
+  },
+  {
+    "locale": "fr-TF",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇹🇫",
+      "name": "French Southern and Antarctic Lands"
+    }
+  },
+  {
+    "locale": "fr-MC",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇲🇨",
+      "name": "Principality of Monaco"
+    }
+  },
+  {
+    "locale": "fr-GA",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇬🇦",
+      "name": "Gabon"
+    }
+  },
+  {
+    "locale": "fr-GP",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇬🇵",
+      "name": "Guadeloupe"
+    }
+  },
+  {
+    "locale": "fr-GG",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇬🇬",
+      "name": "Guernsey"
+    }
+  },
+  {
+    "locale": "fr-GN",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇬🇳",
+      "name": "Guinea"
+    }
+  },
+  {
+    "locale": "fr-HT",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇭🇹",
+      "name": "Haiti"
+    }
+  },
+  {
+    "locale": "fr-JE",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇯🇪",
+      "name": "Jersey"
+    }
+  },
+  {
+    "locale": "fr-CM",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇨🇲",
+      "name": "Cameroon"
+    }
+  },
+  {
+    "locale": "fr-CA",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇨🇦",
+      "name": "Canada"
+    }
+  },
+  {
+    "locale": "fr-KM",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇰🇲",
+      "name": "Comoros"
+    }
+  },
+  {
+    "locale": "fr-LB",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇱🇧",
+      "name": "Lebanon"
+    }
+  },
+  {
+    "locale": "fr-LU",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇱🇺",
+      "name": "Luxembourg"
+    }
+  },
+  {
+    "locale": "fr-MG",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇲🇬",
+      "name": "Madagascar"
+    }
+  },
+  {
+    "locale": "fr-ML",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇲🇱",
+      "name": "Mali"
+    }
+  },
+  {
+    "locale": "fr-MQ",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇲🇶",
+      "name": "Martinique"
+    }
+  },
+  {
+    "locale": "fr-YT",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇾🇹",
+      "name": "Mayotte"
+    }
+  },
+  {
+    "locale": "fr-NC",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇳🇨",
+      "name": "New Caledonia"
+    }
+  },
+  {
+    "locale": "fr-NE",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇳🇪",
+      "name": "Niger"
+    }
+  },
+  {
+    "locale": "fr-CG",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇨🇬",
+      "name": "Republic of the Congo"
+    }
+  },
+  {
+    "locale": "fr-RE",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇷🇪",
+      "name": "Reunion"
+    }
+  },
+  {
+    "locale": "fr-RW",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇷🇼",
+      "name": "Rwanda"
+    }
+  },
+  {
+    "locale": "fr-MF",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇲🇫",
+      "name": "Saint Martin"
+    }
+  },
+  {
+    "locale": "fr-BL",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇧🇱",
+      "name": "Saint Barthelemy"
+    }
+  },
+  {
+    "locale": "fr-CH",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇨🇭",
+      "name": "Switzerland"
+    }
+  },
+  {
+    "locale": "fr-SN",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇸🇳",
+      "name": "Senegal"
+    }
+  },
+  {
+    "locale": "fr-SC",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇸🇨",
+      "name": "Seychelles"
+    }
+  },
+  {
+    "locale": "fr-PM",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇵🇲",
+      "name": "Saint Pierre and Miquelon"
+    }
+  },
+  {
+    "locale": "fr-TG",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇹🇬",
+      "name": "Togo"
+    }
+  },
+  {
+    "locale": "fr-TD",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇹🇩",
+      "name": "Chad"
+    }
+  },
+  {
+    "locale": "fr-VU",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇻🇺",
+      "name": "Vanuatu"
+    }
+  },
+  {
+    "locale": "fr-VA",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇻🇦",
+      "name": "Vatican City"
+    }
+  },
+  {
+    "locale": "fr-WF",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇼🇫",
+      "name": "Wallis and Futuna"
+    }
+  },
+  {
+    "locale": "fr-CF",
+    "language": {
+      "name": "French",
+      "name_local": "français",
+      "iso_639_1": "fr"
+    },
+    "country": {
+      "flag": "🇨🇫",
+      "name": "Central African Republic"
+    }
+  },
+  {
+    "locale": "ff-BF",
+    "language": {
+      "name": "Fula",
+      "name_local": "Fulfulde",
+      "iso_639_1": "ff"
+    },
+    "country": {
+      "flag": "🇧🇫",
+      "name": "Burkina Faso"
+    }
+  },
+  {
+    "locale": "ff-GN",
+    "language": {
+      "name": "Fula",
+      "name_local": "Fulfulde",
+      "iso_639_1": "ff"
+    },
+    "country": {
+      "flag": "🇬🇳",
+      "name": "Guinea"
+    }
+  },
+  {
+    "locale": "ga-IE",
+    "language": {
+      "name": "Irish",
+      "name_local": "Gaeilge",
+      "iso_639_1": "ga"
+    },
+    "country": {
+      "flag": "🇮🇪",
+      "name": "Ireland"
+    }
+  },
+  {
+    "locale": "gv-IM",
+    "language": {
+      "name": "Manx",
+      "name_local": "Gaelg",
+      "iso_639_1": "gv"
+    },
+    "country": {
+      "flag": "🇮🇲",
+      "name": "Isle of Man"
+    }
+  },
+  {
+    "locale": "gn-AR",
+    "language": {
+      "name": "Guaraní",
+      "name_local": "Avañe'ẽ",
+      "iso_639_1": "gn"
+    },
+    "country": {
+      "flag": "🇦🇷",
+      "name": "Argentina"
+    }
+  },
+  {
+    "locale": "gn-PY",
+    "language": {
+      "name": "Guaraní",
+      "name_local": "Avañe'ẽ",
+      "iso_639_1": "gn"
+    },
+    "country": {
+      "flag": "🇵🇾",
+      "name": "Paraguay"
+    }
+  },
+  {
+    "locale": "ht-HT",
+    "language": {
+      "name": "Haitian",
+      "name_local": "Kreyòl ayisyen",
+      "iso_639_1": "ht"
+    },
+    "country": {
+      "flag": "🇭🇹",
+      "name": "Haiti"
+    }
+  },
+  {
+    "locale": "he-IL",
+    "language": {
+      "name": "Hebrew (modern)",
+      "name_local": "עברית",
+      "iso_639_1": "he"
+    },
+    "country": {
+      "flag": "🇮🇱",
+      "name": "Israel"
+    }
+  },
+  {
+    "locale": "hif-FJ",
+    "language": {
+      "name": "Fiji Hindi",
+      "name_local": "फ़िजी बात",
+      "iso_639_1": ""
+    },
+    "country": {
+      "flag": "🇫🇯",
+      "name": "Fiji"
+    }
+  },
+  {
+    "locale": "hi-IN",
+    "language": {
+      "name": "Hindi",
+      "name_local": "हिन्दी",
+      "iso_639_1": "hi"
+    },
+    "country": {
+      "flag": "🇮🇳",
+      "name": "India"
+    }
+  },
+  {
+    "locale": "hr-BA",
+    "language": {
+      "name": "Croatian",
+      "name_local": "hrvatski jezik",
+      "iso_639_1": "hr"
+    },
+    "country": {
+      "flag": "🇧🇦",
+      "name": "Bosnia and Herzegovina"
+    }
+  },
+  {
+    "locale": "hr-HR",
+    "language": {
+      "name": "Croatian",
+      "name_local": "hrvatski jezik",
+      "iso_639_1": "hr"
+    },
+    "country": {
+      "flag": "🇭🇷",
+      "name": "Croatia"
+    }
+  },
+  {
+    "locale": "hr-ME",
+    "language": {
+      "name": "Croatian",
+      "name_local": "hrvatski jezik",
+      "iso_639_1": "hr"
+    },
+    "country": {
+      "flag": "🇲🇪",
+      "name": "Montenegro"
+    }
+  },
+  {
+    "locale": "hu-HU",
+    "language": {
+      "name": "Hungarian",
+      "name_local": "magyar",
+      "iso_639_1": "hu"
+    },
+    "country": {
+      "flag": "🇭🇺",
+      "name": "Hungary"
+    }
+  },
+  {
+    "locale": "hy-AM",
+    "language": {
+      "name": "Armenian",
+      "name_local": "Հայերեն",
+      "iso_639_1": "hy"
+    },
+    "country": {
+      "flag": "🇦🇲",
+      "name": "Armenia"
+    }
+  },
+  {
+    "locale": "hy-CY",
+    "language": {
+      "name": "Armenian",
+      "name_local": "Հայերեն",
+      "iso_639_1": "hy"
+    },
+    "country": {
+      "flag": "🇨🇾",
+      "name": "Cyprus"
+    }
+  },
+  {
+    "locale": "id-ID",
+    "language": {
+      "name": "Indonesian",
+      "name_local": "Bahasa Indonesia",
+      "iso_639_1": "id"
+    },
+    "country": {
+      "flag": "🇮🇩",
+      "name": "Indonesia"
+    }
+  },
+  {
+    "locale": "is-IS",
+    "language": {
+      "name": "Icelandic",
+      "name_local": "Íslenska",
+      "iso_639_1": "is"
+    },
+    "country": {
+      "flag": "🇮🇸",
+      "name": "Iceland"
+    }
+  },
+  {
+    "locale": "it-IT",
+    "language": {
+      "name": "Italian",
+      "name_local": "Italiano",
+      "iso_639_1": "it"
+    },
+    "country": {
+      "flag": "🇮🇹",
+      "name": "Italy"
+    }
+  },
+  {
+    "locale": "it-SM",
+    "language": {
+      "name": "Italian",
+      "name_local": "Italiano",
+      "iso_639_1": "it"
+    },
+    "country": {
+      "flag": "🇸🇲",
+      "name": "San Marino"
+    }
+  },
+  {
+    "locale": "it-CH",
+    "language": {
+      "name": "Italian",
+      "name_local": "Italiano",
+      "iso_639_1": "it"
+    },
+    "country": {
+      "flag": "🇨🇭",
+      "name": "Switzerland"
+    }
+  },
+  {
+    "locale": "it-VA",
+    "language": {
+      "name": "Italian",
+      "name_local": "Italiano",
+      "iso_639_1": "it"
+    },
+    "country": {
+      "flag": "🇻🇦",
+      "name": "Vatican City"
+    }
+  },
+  {
+    "locale": "ja-JP",
+    "language": {
+      "name": "Japanese",
+      "name_local": "日本語 (にほんご)",
+      "iso_639_1": "ja"
+    },
+    "country": {
+      "flag": "🇯🇵",
+      "name": "Japan"
+    }
+  },
+  {
+    "locale": "kl-GL",
+    "language": {
+      "name": "Greenlandic",
+      "name_local": "kalaallisut",
+      "iso_639_1": "kl"
+    },
+    "country": {
+      "flag": "🇬🇱",
+      "name": "Greenland"
+    }
+  },
+  {
+    "locale": "ka-GE",
+    "language": {
+      "name": "Georgian",
+      "name_local": "ქართული",
+      "iso_639_1": "ka"
+    },
+    "country": {
+      "flag": "🇬🇪",
+      "name": "Georgia"
+    }
+  },
+  {
+    "locale": "kk-KZ",
+    "language": {
+      "name": "Kazakh",
+      "name_local": "қазақ тілі",
+      "iso_639_1": "kk"
+    },
+    "country": {
+      "flag": "🇰🇿",
+      "name": "Kazakhstan"
+    }
+  },
+  {
+    "locale": "km-KH",
+    "language": {
+      "name": "Khmer",
+      "name_local": "ខ្មែរ",
+      "iso_639_1": "km"
+    },
+    "country": {
+      "flag": "🇰🇭",
+      "name": "Cambodia"
+    }
+  },
+  {
+    "locale": "rw-RW",
+    "language": {
+      "name": "Kinyarwanda",
+      "name_local": "Ikinyarwanda",
+      "iso_639_1": "rw"
+    },
+    "country": {
+      "flag": "🇷🇼",
+      "name": "Rwanda"
+    }
+  },
+  {
+    "locale": "ky-KG",
+    "language": {
+      "name": "Kyrgyz",
+      "name_local": "Кыргызча",
+      "iso_639_1": "ky"
+    },
+    "country": {
+      "flag": "🇰🇬",
+      "name": "Kyrgyzstan"
+    }
+  },
+  {
+    "locale": "kg-CD",
+    "language": {
+      "name": "Kongo",
+      "name_local": "Kikongo",
+      "iso_639_1": "kg"
+    },
+    "country": {
+      "flag": "🇨🇩",
+      "name": "Democratic Republic of the Congo"
+    }
+  },
+  {
+    "locale": "ko-KP",
+    "language": {
+      "name": "Korean",
+      "name_local": "한국어",
+      "iso_639_1": "ko"
+    },
+    "country": {
+      "flag": "🇰🇵",
+      "name": "North Korea"
+    }
+  },
+  {
+    "locale": "ko-KR",
+    "language": {
+      "name": "Korean",
+      "name_local": "한국어",
+      "iso_639_1": "ko"
+    },
+    "country": {
+      "flag": "🇰🇷",
+      "name": "South Korea"
+    }
+  },
+  {
+    "locale": "kun-ER",
+    "language": {
+      "name": "Kunama",
+      "name_local": "Kunama",
+      "iso_639_1": ""
+    },
+    "country": {
+      "flag": "🇪🇷",
+      "name": "Eritrea"
+    }
+  },
+  {
+    "locale": "ku-IQ",
+    "language": {
+      "name": "Kurdish",
+      "name_local": "Kurdî",
+      "iso_639_1": "ku"
+    },
+    "country": {
+      "flag": "🇮🇶",
+      "name": "Iraq"
+    }
+  },
+  {
+    "locale": "lo-LA",
+    "language": {
+      "name": "Lao",
+      "name_local": "ພາສາລາວ",
+      "iso_639_1": "lo"
+    },
+    "country": {
+      "flag": "🇱🇦",
+      "name": "Laos"
+    }
+  },
+  {
+    "locale": "la-VA",
+    "language": {
+      "name": "Latin",
+      "name_local": "latine",
+      "iso_639_1": "la"
+    },
+    "country": {
+      "flag": "🇻🇦",
+      "name": "Vatican City"
+    }
+  },
+  {
+    "locale": "lv-LV",
+    "language": {
+      "name": "Latvian",
+      "name_local": "latviešu valoda",
+      "iso_639_1": "lv"
+    },
+    "country": {
+      "flag": "🇱🇻",
+      "name": "Latvia"
+    }
+  },
+  {
+    "locale": "ln-CD",
+    "language": {
+      "name": "Lingala",
+      "name_local": "Lingála",
+      "iso_639_1": "ln"
+    },
+    "country": {
+      "flag": "🇨🇩",
+      "name": "Democratic Republic of the Congo"
+    }
+  },
+  {
+    "locale": "ln-CG",
+    "language": {
+      "name": "Lingala",
+      "name_local": "Lingála",
+      "iso_639_1": "ln"
+    },
+    "country": {
+      "flag": "🇨🇬",
+      "name": "Republic of the Congo"
+    }
+  },
+  {
+    "locale": "lt-LT",
+    "language": {
+      "name": "Lithuanian",
+      "name_local": "lietuvių kalba",
+      "iso_639_1": "lt"
+    },
+    "country": {
+      "flag": "🇱🇹",
+      "name": "Lithuania"
+    }
+  },
+  {
+    "locale": "lb-LU",
+    "language": {
+      "name": "Luxembourgish",
+      "name_local": "Lëtzebuergesch",
+      "iso_639_1": "lb"
+    },
+    "country": {
+      "flag": "🇱🇺",
+      "name": "Luxembourg"
+    }
+  },
+  {
+    "locale": "lu-CD",
+    "language": {
+      "name": "Luba-Katanga",
+      "name_local": "Tshiluba",
+      "iso_639_1": "lu"
+    },
+    "country": {
+      "flag": "🇨🇩",
+      "name": "Democratic Republic of the Congo"
+    }
+  },
+  {
+    "locale": "mh-MH",
+    "language": {
+      "name": "Marshallese",
+      "name_local": "Kajin M̧ajeļ",
+      "iso_639_1": "mh"
+    },
+    "country": {
+      "flag": "🇲🇭",
+      "name": "Marshall Islands"
+    }
+  },
+  {
+    "locale": "mk-MK",
+    "language": {
+      "name": "Macedonian",
+      "name_local": "македонски јазик",
+      "iso_639_1": "mk"
+    },
+    "country": {
+      "flag": "🇲🇰",
+      "name": "North Macedonia"
+    }
+  },
+  {
+    "locale": "mg-MG",
+    "language": {
+      "name": "Malagasy",
+      "name_local": "fiteny malagasy",
+      "iso_639_1": "mg"
+    },
+    "country": {
+      "flag": "🇲🇬",
+      "name": "Madagascar"
+    }
+  },
+  {
+    "locale": "mt-MT",
+    "language": {
+      "name": "Maltese",
+      "name_local": "Malti",
+      "iso_639_1": "mt"
+    },
+    "country": {
+      "flag": "🇲🇹",
+      "name": "Malta"
+    }
+  },
+  {
+    "locale": "mn-MN",
+    "language": {
+      "name": "Mongolian",
+      "name_local": "Монгол хэл",
+      "iso_639_1": "mn"
+    },
+    "country": {
+      "flag": "🇲🇳",
+      "name": "Mongolia"
+    }
+  },
+  {
+    "locale": "mi-NZ",
+    "language": {
+      "name": "Māori",
+      "name_local": "te reo Māori",
+      "iso_639_1": "mi"
+    },
+    "country": {
+      "flag": "🇳🇿",
+      "name": "New Zealand"
+    }
+  },
+  {
+    "locale": "ms-BN",
+    "language": {
+      "name": "Malay",
+      "name_local": "bahasa Melayu",
+      "iso_639_1": "ms"
+    },
+    "country": {
+      "flag": "🇧🇳",
+      "name": "Brunei"
+    }
+  },
+  {
+    "locale": "ms-SG",
+    "language": {
+      "name": "Malay",
+      "name_local": "bahasa Melayu",
+      "iso_639_1": "ms"
+    },
+    "country": {
+      "flag": "🇸🇬",
+      "name": "Singapore"
+    }
+  },
+  {
+    "locale": "my-MM",
+    "language": {
+      "name": "Burmese",
+      "name_local": "ဗမာစာ",
+      "iso_639_1": "my"
+    },
+    "country": {
+      "flag": "🇲🇲",
+      "name": "Myanmar"
+    }
+  },
+  {
+    "locale": "na-NR",
+    "language": {
+      "name": "Nauruan",
+      "name_local": "Dorerin Naoero",
+      "iso_639_1": "na"
+    },
+    "country": {
+      "flag": "🇳🇷",
+      "name": "Nauru"
+    }
+  },
+  {
+    "locale": "nr-ZA",
+    "language": {
+      "name": "Southern Ndebele",
+      "name_local": "isiNdebele",
+      "iso_639_1": "nr"
+    },
+    "country": {
+      "flag": "🇿🇦",
+      "name": "South Africa"
+    }
+  },
+  {
+    "locale": "nd-ZW",
+    "language": {
+      "name": "Northern Ndebele",
+      "name_local": "isiNdebele",
+      "iso_639_1": "nd"
+    },
+    "country": {
+      "flag": "🇿🇼",
+      "name": "Zimbabwe"
+    }
+  },
+  {
+    "locale": "ne-NP",
+    "language": {
+      "name": "Nepali",
+      "name_local": "नेपाली",
+      "iso_639_1": "ne"
+    },
+    "country": {
+      "flag": "🇳🇵",
+      "name": "Nepal"
+    }
+  },
+  {
+    "locale": "nl-AW",
+    "language": {
+      "name": "Dutch",
+      "name_local": "Nederlands",
+      "iso_639_1": "nl"
+    },
+    "country": {
+      "flag": "🇦🇼",
+      "name": "Aruba"
+    }
+  },
+  {
+    "locale": "nl-BE",
+    "language": {
+      "name": "Dutch",
+      "name_local": "Nederlands",
+      "iso_639_1": "nl"
+    },
+    "country": {
+      "flag": "🇧🇪",
+      "name": "Belgium"
+    }
+  },
+  {
+    "locale": "nl-CW",
+    "language": {
+      "name": "Dutch",
+      "name_local": "Nederlands",
+      "iso_639_1": "nl"
+    },
+    "country": {
+      "flag": "🇨🇼",
+      "name": "Curacao"
+    }
+  },
+  {
+    "locale": "nl-BQ",
+    "language": {
+      "name": "Dutch",
+      "name_local": "Nederlands",
+      "iso_639_1": "nl"
+    },
+    "country": {
+      "flag": "🇧🇶",
+      "name": "Caribbean Netherlands"
+    }
+  },
+  {
+    "locale": "nl-NL",
+    "language": {
+      "name": "Dutch",
+      "name_local": "Nederlands",
+      "iso_639_1": "nl"
+    },
+    "country": {
+      "flag": "🇳🇱",
+      "name": "Netherlands"
+    }
+  },
+  {
+    "locale": "nl-MF",
+    "language": {
+      "name": "Dutch",
+      "name_local": "Nederlands",
+      "iso_639_1": "nl"
+    },
+    "country": {
+      "flag": "🇲🇫",
+      "name": "Saint Martin"
+    }
+  },
+  {
+    "locale": "nl-SX",
+    "language": {
+      "name": "Dutch",
+      "name_local": "Nederlands",
+      "iso_639_1": "nl"
+    },
+    "country": {
+      "flag": "🇸🇽",
+      "name": "Sint Maarten"
+    }
+  },
+  {
+    "locale": "nl-SR",
+    "language": {
+      "name": "Dutch",
+      "name_local": "Nederlands",
+      "iso_639_1": "nl"
+    },
+    "country": {
+      "flag": "🇸🇷",
+      "name": "Suriname"
+    }
+  },
+  {
+    "locale": "nn-BV",
+    "language": {
+      "name": "Norwegian Nynorsk",
+      "name_local": "Norsk nynorsk",
+      "iso_639_1": "nn"
+    },
+    "country": {
+      "flag": "🇧🇻",
+      "name": "Bouvet Island"
+    }
+  },
+  {
+    "locale": "nn-NO",
+    "language": {
+      "name": "Norwegian Nynorsk",
+      "name_local": "Norsk nynorsk",
+      "iso_639_1": "nn"
+    },
+    "country": {
+      "flag": "🇳🇴",
+      "name": "Norway"
+    }
+  },
+  {
+    "locale": "nb-BV",
+    "language": {
+      "name": "Norwegian Bokmål",
+      "name_local": "Norsk bokmål",
+      "iso_639_1": "nb"
+    },
+    "country": {
+      "flag": "🇧🇻",
+      "name": "Bouvet Island"
+    }
+  },
+  {
+    "locale": "nb-NO",
+    "language": {
+      "name": "Norwegian Bokmål",
+      "name_local": "Norsk bokmål",
+      "iso_639_1": "nb"
+    },
+    "country": {
+      "flag": "🇳🇴",
+      "name": "Norway"
+    }
+  },
+  {
+    "locale": "no-BV",
+    "language": {
+      "name": "Norwegian",
+      "name_local": "Norsk",
+      "iso_639_1": "no"
+    },
+    "country": {
+      "flag": "🇧🇻",
+      "name": "Bouvet Island"
+    }
+  },
+  {
+    "locale": "no-NO",
+    "language": {
+      "name": "Norwegian",
+      "name_local": "Norsk",
+      "iso_639_1": "no"
+    },
+    "country": {
+      "flag": "🇳🇴",
+      "name": "Norway"
+    }
+  },
+  {
+    "locale": "no-SJ",
+    "language": {
+      "name": "Norwegian",
+      "name_local": "Norsk",
+      "iso_639_1": "no"
+    },
+    "country": {
+      "flag": "🇸🇯",
+      "name": "Svalbard"
+    }
+  },
+  {
+    "locale": "nrb-ER",
+    "language": {
+      "name": "Nara",
+      "name_local": "Nara",
+      "iso_639_1": ""
+    },
+    "country": {
+      "flag": "🇪🇷",
+      "name": "Eritrea"
+    }
+  },
+  {
+    "locale": "ny-MW",
+    "language": {
+      "name": "Chichewa",
+      "name_local": "chiCheŵa",
+      "iso_639_1": "ny"
+    },
+    "country": {
+      "flag": "🇲🇼",
+      "name": "Malawi"
+    }
+  },
+  {
+    "locale": "pa-AW",
+    "language": {
+      "name": "(Eastern) Punjabi",
+      "name_local": "ਪੰਜਾਬੀ",
+      "iso_639_1": "pa"
+    },
+    "country": {
+      "flag": "🇦🇼",
+      "name": "Aruba"
+    }
+  },
+  {
+    "locale": "pa-CW",
+    "language": {
+      "name": "(Eastern) Punjabi",
+      "name_local": "ਪੰਜਾਬੀ",
+      "iso_639_1": "pa"
+    },
+    "country": {
+      "flag": "🇨🇼",
+      "name": "Curacao"
+    }
+  },
+  {
+    "locale": "pl-PL",
+    "language": {
+      "name": "Polish",
+      "name_local": "polski",
+      "iso_639_1": "pl"
+    },
+    "country": {
+      "flag": "🇵🇱",
+      "name": "Poland"
+    }
+  },
+  {
+    "locale": "pt-AO",
+    "language": {
+      "name": "Portuguese",
+      "name_local": "Português",
+      "iso_639_1": "pt"
+    },
+    "country": {
+      "flag": "🇦🇴",
+      "name": "Angola"
+    }
+  },
+  {
+    "locale": "pt-GQ",
+    "language": {
+      "name": "Portuguese",
+      "name_local": "Português",
+      "iso_639_1": "pt"
+    },
+    "country": {
+      "flag": "🇬🇶",
+      "name": "Equatorial Guinea"
+    }
+  },
+  {
+    "locale": "pt-BR",
+    "language": {
+      "name": "Portuguese",
+      "name_local": "Português",
+      "iso_639_1": "pt"
+    },
+    "country": {
+      "flag": "🇧🇷",
+      "name": "Brazil"
+    }
+  },
+  {
+    "locale": "pt-GW",
+    "language": {
+      "name": "Portuguese",
+      "name_local": "Português",
+      "iso_639_1": "pt"
+    },
+    "country": {
+      "flag": "🇬🇼",
+      "name": "Guinea-Bissau"
+    }
+  },
+  {
+    "locale": "pt-CV",
+    "language": {
+      "name": "Portuguese",
+      "name_local": "Português",
+      "iso_639_1": "pt"
+    },
+    "country": {
+      "flag": "🇨🇻",
+      "name": "Cape Verde"
+    }
+  },
+  {
+    "locale": "pt-MO",
+    "language": {
+      "name": "Portuguese",
+      "name_local": "Português",
+      "iso_639_1": "pt"
+    },
+    "country": {
+      "flag": "🇲🇴",
+      "name": "Macao"
+    }
+  },
+  {
+    "locale": "pt-MZ",
+    "language": {
+      "name": "Portuguese",
+      "name_local": "Português",
+      "iso_639_1": "pt"
+    },
+    "country": {
+      "flag": "🇲🇿",
+      "name": "Mozambique"
+    }
+  },
+  {
+    "locale": "pt-TL",
+    "language": {
+      "name": "Portuguese",
+      "name_local": "Português",
+      "iso_639_1": "pt"
+    },
+    "country": {
+      "flag": "🇹🇱",
+      "name": "East Timor"
+    }
+  },
+  {
+    "locale": "pt-PT",
+    "language": {
+      "name": "Portuguese",
+      "name_local": "Português",
+      "iso_639_1": "pt"
+    },
+    "country": {
+      "flag": "🇵🇹",
+      "name": "Portugal"
+    }
+  },
+  {
+    "locale": "pt-ST",
+    "language": {
+      "name": "Portuguese",
+      "name_local": "Português",
+      "iso_639_1": "pt"
+    },
+    "country": {
+      "flag": "🇸🇹",
+      "name": "Sao Tome and Principe"
+    }
+  },
+  {
+    "locale": "ps-AF",
+    "language": {
+      "name": "Pashto",
+      "name_local": "پښتو",
+      "iso_639_1": "ps"
+    },
+    "country": {
+      "flag": "🇦🇫",
+      "name": "Afghanistan"
+    }
+  },
+  {
+    "locale": "qu-BO",
+    "language": {
+      "name": "Quechua",
+      "name_local": "Runa Simi",
+      "iso_639_1": "qu"
+    },
+    "country": {
+      "flag": "🇧🇴",
+      "name": "Bolivia"
+    }
+  },
+  {
+    "locale": "rar-CK",
+    "language": {
+      "name": "Cook Islands Māori",
+      "name_local": "Māori",
+      "iso_639_1": ""
+    },
+    "country": {
+      "flag": "🇨🇰",
+      "name": "Cook Islands"
+    }
+  },
+  {
+    "locale": "rm-CH",
+    "language": {
+      "name": "Romansh",
+      "name_local": "Rumantsch",
+      "iso_639_1": "rm"
+    },
+    "country": {
+      "flag": "🇨🇭",
+      "name": "Switzerland"
+    }
+  },
+  {
+    "locale": "ro-MD",
+    "language": {
+      "name": "Romanian",
+      "name_local": "Română",
+      "iso_639_1": "ro"
+    },
+    "country": {
+      "flag": "🇲🇩",
+      "name": "Moldova"
+    }
+  },
+  {
+    "locale": "ro-RO",
+    "language": {
+      "name": "Romanian",
+      "name_local": "Română",
+      "iso_639_1": "ro"
+    },
+    "country": {
+      "flag": "🇷🇴",
+      "name": "Romania"
+    }
+  },
+  {
+    "locale": "rtm-FJ",
+    "language": {
+      "name": "Rotuman",
+      "name_local": "Fäeag Rotuma",
+      "iso_639_1": ""
+    },
+    "country": {
+      "flag": "🇫🇯",
+      "name": "Fiji"
+    }
+  },
+  {
+    "locale": "rn-BI",
+    "language": {
+      "name": "Kirundi",
+      "name_local": "Ikirundi",
+      "iso_639_1": "rn"
+    },
+    "country": {
+      "flag": "🇧🇮",
+      "name": "Burundi"
+    }
+  },
+  {
+    "locale": "ru-AQ",
+    "language": {
+      "name": "Russian",
+      "name_local": "Русский",
+      "iso_639_1": "ru"
+    },
+    "country": {
+      "flag": "🇦🇶",
+      "name": "Antarctica"
+    }
+  },
+  {
+    "locale": "ru-BY",
+    "language": {
+      "name": "Russian",
+      "name_local": "Русский",
+      "iso_639_1": "ru"
+    },
+    "country": {
+      "flag": "🇧🇾",
+      "name": "Belarus"
+    }
+  },
+  {
+    "locale": "ru-KZ",
+    "language": {
+      "name": "Russian",
+      "name_local": "Русский",
+      "iso_639_1": "ru"
+    },
+    "country": {
+      "flag": "🇰🇿",
+      "name": "Kazakhstan"
+    }
+  },
+  {
+    "locale": "ru-KG",
+    "language": {
+      "name": "Russian",
+      "name_local": "Русский",
+      "iso_639_1": "ru"
+    },
+    "country": {
+      "flag": "🇰🇬",
+      "name": "Kyrgyzstan"
+    }
+  },
+  {
+    "locale": "ru-RU",
+    "language": {
+      "name": "Russian",
+      "name_local": "Русский",
+      "iso_639_1": "ru"
+    },
+    "country": {
+      "flag": "🇷🇺",
+      "name": "Russia"
+    }
+  },
+  {
+    "locale": "ru-TJ",
+    "language": {
+      "name": "Russian",
+      "name_local": "Русский",
+      "iso_639_1": "ru"
+    },
+    "country": {
+      "flag": "🇹🇯",
+      "name": "Tajikistan"
+    }
+  },
+  {
+    "locale": "ru-TM",
+    "language": {
+      "name": "Russian",
+      "name_local": "Русский",
+      "iso_639_1": "ru"
+    },
+    "country": {
+      "flag": "🇹🇲",
+      "name": "Turkmenistan"
+    }
+  },
+  {
+    "locale": "ru-UZ",
+    "language": {
+      "name": "Russian",
+      "name_local": "Русский",
+      "iso_639_1": "ru"
+    },
+    "country": {
+      "flag": "🇺🇿",
+      "name": "Uzbekistan"
+    }
+  },
+  {
+    "locale": "sg-CF",
+    "language": {
+      "name": "Sango",
+      "name_local": "yângâ tî sängö",
+      "iso_639_1": "sg"
+    },
+    "country": {
+      "flag": "🇨🇫",
+      "name": "Central African Republic"
+    }
+  },
+  {
+    "locale": "si-LK",
+    "language": {
+      "name": "Sinhalese",
+      "name_local": "සිංහල",
+      "iso_639_1": "si"
+    },
+    "country": {
+      "flag": "🇱🇰",
+      "name": "Sri Lanka"
+    }
+  },
+  {
+    "locale": "sk-SK",
+    "language": {
+      "name": "Slovak",
+      "name_local": "slovenčina",
+      "iso_639_1": "sk"
+    },
+    "country": {
+      "flag": "🇸🇰",
+      "name": "Slovakia"
+    }
+  },
+  {
+    "locale": "sk-CZ",
+    "language": {
+      "name": "Slovak",
+      "name_local": "slovenčina",
+      "iso_639_1": "sk"
+    },
+    "country": {
+      "flag": "🇨🇿",
+      "name": "Czechia"
+    }
+  },
+  {
+    "locale": "sl-SI",
+    "language": {
+      "name": "Slovene",
+      "name_local": "slovenski jezik",
+      "iso_639_1": "sl"
+    },
+    "country": {
+      "flag": "🇸🇮",
+      "name": "Slovenia"
+    }
+  },
+  {
+    "locale": "sm-AS",
+    "language": {
+      "name": "Samoan",
+      "name_local": "gagana fa'a Samoa",
+      "iso_639_1": "sm"
+    },
+    "country": {
+      "flag": "🇦🇸",
+      "name": "American Samoa"
+    }
+  },
+  {
+    "locale": "sm-WS",
+    "language": {
+      "name": "Samoan",
+      "name_local": "gagana fa'a Samoa",
+      "iso_639_1": "sm"
+    },
+    "country": {
+      "flag": "🇼🇸",
+      "name": "Samoa"
+    }
+  },
+  {
+    "locale": "sn-ZW",
+    "language": {
+      "name": "Shona",
+      "name_local": "chiShona",
+      "iso_639_1": "sn"
+    },
+    "country": {
+      "flag": "🇿🇼",
+      "name": "Zimbabwe"
+    }
+  },
+  {
+    "locale": "so-SO",
+    "language": {
+      "name": "Somali",
+      "name_local": "Soomaaliga",
+      "iso_639_1": "so"
+    },
+    "country": {
+      "flag": "🇸🇴",
+      "name": "Somalia"
+    }
+  },
+  {
+    "locale": "st-LS",
+    "language": {
+      "name": "Southern Sotho",
+      "name_local": "Sesotho",
+      "iso_639_1": "st"
+    },
+    "country": {
+      "flag": "🇱🇸",
+      "name": "Lesotho"
+    }
+  },
+  {
+    "locale": "st-ZA",
+    "language": {
+      "name": "Southern Sotho",
+      "name_local": "Sesotho",
+      "iso_639_1": "st"
+    },
+    "country": {
+      "flag": "🇿🇦",
+      "name": "South Africa"
+    }
+  },
+  {
+    "locale": "es-GQ",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇬🇶",
+      "name": "Equatorial Guinea"
+    }
+  },
+  {
+    "locale": "es-AR",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇦🇷",
+      "name": "Argentina"
+    }
+  },
+  {
+    "locale": "es-BZ",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇧🇿",
+      "name": "Belize"
+    }
+  },
+  {
+    "locale": "es-BO",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇧🇴",
+      "name": "Bolivia"
+    }
+  },
+  {
+    "locale": "es-CL",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇨🇱",
+      "name": "Chile"
+    }
+  },
+  {
+    "locale": "es-CR",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇨🇷",
+      "name": "Costa Rica"
+    }
+  },
+  {
+    "locale": "es-DO",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇩🇴",
+      "name": "Dominican Republic"
+    }
+  },
+  {
+    "locale": "es-EC",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇪🇨",
+      "name": "Ecuador"
+    }
+  },
+  {
+    "locale": "es-SV",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇸🇻",
+      "name": "El Salvador"
+    }
+  },
+  {
+    "locale": "es-GU",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇬🇺",
+      "name": "Guam"
+    }
+  },
+  {
+    "locale": "es-GT",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇬🇹",
+      "name": "Guatemala"
+    }
+  },
+  {
+    "locale": "es-HN",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇭🇳",
+      "name": "Honduras"
+    }
+  },
+  {
+    "locale": "es-CO",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇨🇴",
+      "name": "Colombia"
+    }
+  },
+  {
+    "locale": "es-CU",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇨🇺",
+      "name": "Cuba"
+    }
+  },
+  {
+    "locale": "es-MX",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇲🇽",
+      "name": "Mexico"
+    }
+  },
+  {
+    "locale": "es-NI",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇳🇮",
+      "name": "Nicaragua"
+    }
+  },
+  {
+    "locale": "es-PA",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇵🇦",
+      "name": "Panama"
+    }
+  },
+  {
+    "locale": "es-PY",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇵🇾",
+      "name": "Paraguay"
+    }
+  },
+  {
+    "locale": "es-PE",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇵🇪",
+      "name": "Peru"
+    }
+  },
+  {
+    "locale": "es-PR",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇵🇷",
+      "name": "Puerto Rico"
+    }
+  },
+  {
+    "locale": "es-ES",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇪🇸",
+      "name": "Spain"
+    }
+  },
+  {
+    "locale": "es-UY",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇺🇾",
+      "name": "Uruguay"
+    }
+  },
+  {
+    "locale": "es-VE",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇻🇪",
+      "name": "Venezuela"
+    }
+  },
+  {
+    "locale": "es-EH",
+    "language": {
+      "name": "Spanish",
+      "name_local": "Español",
+      "iso_639_1": "es"
+    },
+    "country": {
+      "flag": "🇪🇭",
+      "name": "Western Sahara"
+    }
+  },
+  {
+    "locale": "sq-AL",
+    "language": {
+      "name": "Albanian",
+      "name_local": "Shqip",
+      "iso_639_1": "sq"
+    },
+    "country": {
+      "flag": "🇦🇱",
+      "name": "Albania"
+    }
+  },
+  {
+    "locale": "sq-XK",
+    "language": {
+      "name": "Albanian",
+      "name_local": "Shqip",
+      "iso_639_1": "sq"
+    },
+    "country": {
+      "flag": "🇽🇰",
+      "name": "Kosovo"
+    }
+  },
+  {
+    "locale": "sq-ME",
+    "language": {
+      "name": "Albanian",
+      "name_local": "Shqip",
+      "iso_639_1": "sq"
+    },
+    "country": {
+      "flag": "🇲🇪",
+      "name": "Montenegro"
+    }
+  },
+  {
+    "locale": "sr-BA",
+    "language": {
+      "name": "Serbian",
+      "name_local": "српски језик",
+      "iso_639_1": "sr"
+    },
+    "country": {
+      "flag": "🇧🇦",
+      "name": "Bosnia and Herzegovina"
+    }
+  },
+  {
+    "locale": "sr-XK",
+    "language": {
+      "name": "Serbian",
+      "name_local": "српски језик",
+      "iso_639_1": "sr"
+    },
+    "country": {
+      "flag": "🇽🇰",
+      "name": "Kosovo"
+    }
+  },
+  {
+    "locale": "sr-ME",
+    "language": {
+      "name": "Serbian",
+      "name_local": "српски језик",
+      "iso_639_1": "sr"
+    },
+    "country": {
+      "flag": "🇲🇪",
+      "name": "Montenegro"
+    }
+  },
+  {
+    "locale": "sr-RS",
+    "language": {
+      "name": "Serbian",
+      "name_local": "српски језик",
+      "iso_639_1": "sr"
+    },
+    "country": {
+      "flag": "🇷🇸",
+      "name": "Serbia"
+    }
+  },
+  {
+    "locale": "ss-SZ",
+    "language": {
+      "name": "Swati",
+      "name_local": "SiSwati",
+      "iso_639_1": "ss"
+    },
+    "country": {
+      "flag": "🇸🇿",
+      "name": "Eswatini"
+    }
+  },
+  {
+    "locale": "ss-ZA",
+    "language": {
+      "name": "Swati",
+      "name_local": "SiSwati",
+      "iso_639_1": "ss"
+    },
+    "country": {
+      "flag": "🇿🇦",
+      "name": "South Africa"
+    }
+  },
+  {
+    "locale": "ssy-ER",
+    "language": {
+      "name": "Saho",
+      "name_local": "Saho",
+      "iso_639_1": ""
+    },
+    "country": {
+      "flag": "🇪🇷",
+      "name": "Eritrea"
+    }
+  },
+  {
+    "locale": "sw-CD",
+    "language": {
+      "name": "Swahili",
+      "name_local": "Kiswahili",
+      "iso_639_1": "sw"
+    },
+    "country": {
+      "flag": "🇨🇩",
+      "name": "Democratic Republic of the Congo"
+    }
+  },
+  {
+    "locale": "sw-KE",
+    "language": {
+      "name": "Swahili",
+      "name_local": "Kiswahili",
+      "iso_639_1": "sw"
+    },
+    "country": {
+      "flag": "🇰🇪",
+      "name": "Kenya"
+    }
+  },
+  {
+    "locale": "sw-TZ",
+    "language": {
+      "name": "Swahili",
+      "name_local": "Kiswahili",
+      "iso_639_1": "sw"
+    },
+    "country": {
+      "flag": "🇹🇿",
+      "name": "Tanzania"
+    }
+  },
+  {
+    "locale": "sw-UG",
+    "language": {
+      "name": "Swahili",
+      "name_local": "Kiswahili",
+      "iso_639_1": "sw"
+    },
+    "country": {
+      "flag": "🇺🇬",
+      "name": "Uganda"
+    }
+  },
+  {
+    "locale": "sv-AX",
+    "language": {
+      "name": "Swedish",
+      "name_local": "svenska",
+      "iso_639_1": "sv"
+    },
+    "country": {
+      "flag": "🇦🇽",
+      "name": "Åland Islands"
+    }
+  },
+  {
+    "locale": "sv-FI",
+    "language": {
+      "name": "Swedish",
+      "name_local": "svenska",
+      "iso_639_1": "sv"
+    },
+    "country": {
+      "flag": "🇫🇮",
+      "name": "Finland"
+    }
+  },
+  {
+    "locale": "sv-SE",
+    "language": {
+      "name": "Swedish",
+      "name_local": "svenska",
+      "iso_639_1": "sv"
+    },
+    "country": {
+      "flag": "🇸🇪",
+      "name": "Sweden"
+    }
+  },
+  {
+    "locale": "ta-SG",
+    "language": {
+      "name": "Tamil",
+      "name_local": "தமிழ்",
+      "iso_639_1": "ta"
+    },
+    "country": {
+      "flag": "🇸🇬",
+      "name": "Singapore"
+    }
+  },
+  {
+    "locale": "ta-LK",
+    "language": {
+      "name": "Tamil",
+      "name_local": "தமிழ்",
+      "iso_639_1": "ta"
+    },
+    "country": {
+      "flag": "🇱🇰",
+      "name": "Sri Lanka"
+    }
+  },
+  {
+    "locale": "tg-TJ",
+    "language": {
+      "name": "Tajik",
+      "name_local": "тоҷикӣ",
+      "iso_639_1": "tg"
+    },
+    "country": {
+      "flag": "🇹🇯",
+      "name": "Tajikistan"
+    }
+  },
+  {
+    "locale": "th-TH",
+    "language": {
+      "name": "Thai",
+      "name_local": "ไทย",
+      "iso_639_1": "th"
+    },
+    "country": {
+      "flag": "🇹🇭",
+      "name": "Thailand"
+    }
+  },
+  {
+    "locale": "tig-ER",
+    "language": {
+      "name": "Tigre",
+      "name_local": "ትግረ",
+      "iso_639_1": ""
+    },
+    "country": {
+      "flag": "🇪🇷",
+      "name": "Eritrea"
+    }
+  },
+  {
+    "locale": "ti-ER",
+    "language": {
+      "name": "Tigrinya",
+      "name_local": "ትግርኛ",
+      "iso_639_1": "ti"
+    },
+    "country": {
+      "flag": "🇪🇷",
+      "name": "Eritrea"
+    }
+  },
+  {
+    "locale": "to-TO",
+    "language": {
+      "name": "Tonga (Tonga Islands)",
+      "name_local": "faka Tonga",
+      "iso_639_1": "to"
+    },
+    "country": {
+      "flag": "🇹🇴",
+      "name": "Tonga"
+    }
+  },
+  {
+    "locale": "tn-BW",
+    "language": {
+      "name": "Tswana",
+      "name_local": "Setswana",
+      "iso_639_1": "tn"
+    },
+    "country": {
+      "flag": "🇧🇼",
+      "name": "Botswana"
+    }
+  },
+  {
+    "locale": "tn-ZA",
+    "language": {
+      "name": "Tswana",
+      "name_local": "Setswana",
+      "iso_639_1": "tn"
+    },
+    "country": {
+      "flag": "🇿🇦",
+      "name": "South Africa"
+    }
+  },
+  {
+    "locale": "ts-ZA",
+    "language": {
+      "name": "Tsonga",
+      "name_local": "Xitsonga",
+      "iso_639_1": "ts"
+    },
+    "country": {
+      "flag": "🇿🇦",
+      "name": "South Africa"
+    }
+  },
+  {
+    "locale": "tk-AF",
+    "language": {
+      "name": "Turkmen",
+      "name_local": "Türkmen",
+      "iso_639_1": "tk"
+    },
+    "country": {
+      "flag": "🇦🇫",
+      "name": "Afghanistan"
+    }
+  },
+  {
+    "locale": "tk-TM",
+    "language": {
+      "name": "Turkmen",
+      "name_local": "Türkmen",
+      "iso_639_1": "tk"
+    },
+    "country": {
+      "flag": "🇹🇲",
+      "name": "Turkmenistan"
+    }
+  },
+  {
+    "locale": "tr-TR",
+    "language": {
+      "name": "Turkish",
+      "name_local": "Türkçe",
+      "iso_639_1": "tr"
+    },
+    "country": {
+      "flag": "🇹🇷",
+      "name": "Turkey"
+    }
+  },
+  {
+    "locale": "tr-CY",
+    "language": {
+      "name": "Turkish",
+      "name_local": "Türkçe",
+      "iso_639_1": "tr"
+    },
+    "country": {
+      "flag": "🇨🇾",
+      "name": "Cyprus"
+    }
+  },
+  {
+    "locale": "uk-UA",
+    "language": {
+      "name": "Ukrainian",
+      "name_local": "Українська",
+      "iso_639_1": "uk"
+    },
+    "country": {
+      "flag": "🇺🇦",
+      "name": "Ukraine"
+    }
+  },
+  {
+    "locale": "ur-PK",
+    "language": {
+      "name": "Urdu",
+      "name_local": "اردو",
+      "iso_639_1": "ur"
+    },
+    "country": {
+      "flag": "🇵🇰",
+      "name": "Pakistan"
+    }
+  },
+  {
+    "locale": "uz-AF",
+    "language": {
+      "name": "Uzbek",
+      "name_local": "Oʻzbek",
+      "iso_639_1": "uz"
+    },
+    "country": {
+      "flag": "🇦🇫",
+      "name": "Afghanistan"
+    }
+  },
+  {
+    "locale": "uz-UZ",
+    "language": {
+      "name": "Uzbek",
+      "name_local": "Oʻzbek",
+      "iso_639_1": "uz"
+    },
+    "country": {
+      "flag": "🇺🇿",
+      "name": "Uzbekistan"
+    }
+  },
+  {
+    "locale": "ve-ZA",
+    "language": {
+      "name": "Venda",
+      "name_local": "Tshivenḓa",
+      "iso_639_1": "ve"
+    },
+    "country": {
+      "flag": "🇿🇦",
+      "name": "South Africa"
+    }
+  },
+  {
+    "locale": "vi-VN",
+    "language": {
+      "name": "Vietnamese",
+      "name_local": "Tiếng Việt",
+      "iso_639_1": "vi"
+    },
+    "country": {
+      "flag": "🇻🇳",
+      "name": "Vietnam"
+    }
+  },
+  {
+    "locale": "xh-ZA",
+    "language": {
+      "name": "Xhosa",
+      "name_local": "isiXhosa",
+      "iso_639_1": "xh"
+    },
+    "country": {
+      "flag": "🇿🇦",
+      "name": "South Africa"
+    }
+  },
+  {
+    "locale": "zh-CN",
+    "language": {
+      "name": "Chinese",
+      "name_local": "中文 (Zhōngwén)",
+      "iso_639_1": "zh"
+    },
+    "country": {
+      "flag": "🇨🇳",
+      "name": "China"
+    }
+  },
+  {
+    "locale": "zh-HK",
+    "language": {
+      "name": "Chinese",
+      "name_local": "中文 (Zhōngwén)",
+      "iso_639_1": "zh"
+    },
+    "country": {
+      "flag": "🇭🇰",
+      "name": "Hong Kong"
+    }
+  },
+  {
+    "locale": "zh-MO",
+    "language": {
+      "name": "Chinese",
+      "name_local": "中文 (Zhōngwén)",
+      "iso_639_1": "zh"
+    },
+    "country": {
+      "flag": "🇲🇴",
+      "name": "Macao"
+    }
+  },
+  {
+    "locale": "zh-SG",
+    "language": {
+      "name": "Chinese",
+      "name_local": "中文 (Zhōngwén)",
+      "iso_639_1": "zh"
+    },
+    "country": {
+      "flag": "🇸🇬",
+      "name": "Singapore"
+    }
+  },
+  {
+    "locale": "zh-TW",
+    "language": {
+      "name": "Chinese",
+      "name_local": "中文 (Zhōngwén)",
+      "iso_639_1": "zh"
+    },
+    "country": {
+      "flag": "🇹🇼",
+      "name": "Taiwan"
+    }
+  },
+  {
+    "locale": "ms-MY",
+    "language": {
+      "name": "Malay",
+      "name_local": "bahasa Melayu",
+      "iso_639_1": "ms"
+    },
+    "country": {
+      "flag": "🇲🇾",
+      "name": "Malaysia"
+    }
+  },
+  {
+    "locale": "zu-ZA",
+    "language": {
+      "name": "Zulu",
+      "name_local": "isiZulu",
+      "iso_639_1": "zu"
+    },
+    "country": {
+      "flag": "🇿🇦",
+      "name": "South Africa"
+    }
+  }
+]
