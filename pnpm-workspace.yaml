@@ -1,23 +1,39 @@
 cleanupUnusedCatalogs: true
-shellEmulator: true # https://pnpm.io/settings#shellemulator
-trustPolicy: no-downgrade # https://pnpm.io/settings#trustpolicy
 
+shellEmulator: true
+
+trustPolicy: no-downgrade
 packages:
   - packages/*
 
-catalog:
-  '@antfu/eslint-config': ^7.6.1
-  '@types/node': ^25.3.3
-  bumpp: ^10.4.1
-  eslint: ^10.0.2
-  esno: ^4.8.0
-  execa: ^9.6.1
-  lint-staged: ^16.3.2
-  simple-git-hooks: ^2.13.1
-  tsdown: ^0.20.3
-  typescript: ^5.9.3
-  vitest: ^4.0.18
-
+catalogs:
+  dev:
+    '@antfu/eslint-config': ^7.6.1
+    '@types/node': ^25.3.3
+    '@types/react': ^18.3.0
+    bumpp: ^10.4.1
+    eslint: ^10.0.2
+    esno: ^4.8.0
+    execa: ^9.6.1
+    lint-staged: ^16.3.2
+    simple-git-hooks: ^2.13.1
+    tsdown: ^0.20.3
+    typescript: ^5.9.3
+    vitest: ^4.0.18
+  prod:
+    '@ai-sdk/anthropic': ^3.0.54
+    '@ai-sdk/deepseek': ^2.0.22
+    '@ai-sdk/google': ^3.0.37
+    '@ai-sdk/mistral': ^3.0.22
+    '@ai-sdk/openai': ^3.0.39
+    ai: ^6.0.111
+    citty: ^0.1.6
+    ink: ^5.1.0
+    ink-spinner: ^5.0.0
+    ink-text-input: ^6.0.0
+    pathe: ^2.0.3
+    react: ^18.3.1
+    undici: ^7.22.0
 onlyBuiltDependencies:
   - esbuild
   - simple-git-hooks

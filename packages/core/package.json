@@ -1,0 +1,35 @@
+{
+  "name": "@llmtr/core",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Core AI translation API for llmtr",
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "prepack": "pnpm build"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "catalog:prod",
+    "@ai-sdk/deepseek": "catalog:prod",
+    "@ai-sdk/google": "catalog:prod",
+    "@ai-sdk/mistral": "catalog:prod",
+    "@ai-sdk/openai": "catalog:prod",
+    "ai": "catalog:prod",
+    "pathe": "catalog:prod",
+    "undici": "catalog:prod"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:dev",
+    "tsdown": "catalog:dev",
+    "typescript": "catalog:dev"
+  }
+}

@@ -1,5 +1,10 @@
 import antfu from '@antfu/eslint-config'
 
-export default antfu({
-  pnpm: true,
-})
+export default antfu(
+  {
+    pnpm: true,
+  },
+  {
+    ignores: ['.agents/**'],
+  },
+)

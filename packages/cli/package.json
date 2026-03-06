@@ -1,0 +1,41 @@
+{
+  "name": "@llmtr/cli",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "AI-powered translation CLI with TUI",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "bin": {
+    "llmtr": "./dist/index.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "prepack": "pnpm build",
+    "link": "npm link",
+    "unlink": "npm unlink -g @llmtr/cli"
+  },
+  "dependencies": {
+    "@llmtr/core": "workspace:*",
+    "citty": "catalog:prod",
+    "ink": "catalog:prod",
+    "ink-spinner": "catalog:prod",
+    "ink-text-input": "catalog:prod",
+    "pathe": "catalog:prod",
+    "react": "catalog:prod"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:dev",
+    "@types/react": "catalog:dev",
+    "tsdown": "catalog:dev",
+    "typescript": "catalog:dev"
+  }
+}

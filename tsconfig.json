@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "jsx": "react-jsx",
     "lib": [
       "es2023"
     ],
@@ -15,7 +16,6 @@
     "noImplicitOverride": true,
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
-    "declaration": true,
     "esModuleInterop": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
