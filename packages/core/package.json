@@ -50,5 +50,8 @@
     "@types/node": "catalog:dev",
     "tsdown": "catalog:dev",
     "typescript": "catalog:dev"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
