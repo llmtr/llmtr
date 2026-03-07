@@ -2,8 +2,27 @@
   "name": "@llmtr/core",
   "type": "module",
   "version": "0.0.1",
-  "description": "Core AI translation API for llmtr",
+  "description": "Core AI translation API for llmtr — reusable across tools",
+  "author": "Moozon <muzhenweizh@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/llmtr/llmtr/tree/main/packages/core",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/llmtr/llmtr.git",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/llmtr/llmtr/issues"
+  },
+  "keywords": [
+    "ai",
+    "translation",
+    "llm",
+    "openai",
+    "anthropic",
+    "i18n",
+    "cli"
+  ],
   "exports": {
     ".": "./dist/index.mjs",
     "./package.json": "./package.json"

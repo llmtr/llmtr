@@ -2,9 +2,30 @@
   "name": "@llmtr/cli",
   "type": "module",
   "version": "0.0.1",
-  "description": "AI-powered translation CLI with TUI",
-  "author": "Moozon",
+  "description": "AI-powered translation CLI — translate text & files using your favourite LLM",
+  "author": "Moozon <muzhenweizh@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/llmtr/llmtr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/llmtr/llmtr.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/llmtr/llmtr/issues"
+  },
+  "keywords": [
+    "ai",
+    "translation",
+    "llm",
+    "cli",
+    "tui",
+    "i18n",
+    "openai",
+    "anthropic",
+    "deepseek",
+    "terminal"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.mjs"
