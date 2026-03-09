@@ -37,6 +37,16 @@ llmtr t "Hello" --lang es
 
 ## Commands
 
+### `llmtr version` (aliases: `llmtr v`, `llmtr --version`)
+
+Print the current version.
+
+```bash
+llmtr version
+llmtr v
+llmtr --version
+```
+
 ### `llmtr config`
 
 Interactive TUI wizard to create or edit a config file.

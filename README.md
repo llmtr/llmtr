@@ -25,6 +25,9 @@ AI-powered translation CLI. Translate text and files into multiple languages sim
 ```bash
 npm install -g @llmtr/cli
 
+# Check version
+llmtr version
+
 # Interactive setup
 llmtr config
 
