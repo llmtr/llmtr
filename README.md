@@ -18,8 +18,9 @@ AI-powered translation CLI. Translate text and files into multiple languages sim
 - **Config wizard** — interactive `llmtr config` with a live config card
 - **Config walk-up** — finds the nearest config file from CWD up to `~`
 - **Pipeable** — `--stdout` flag for scripting and shell pipelines
+- **Proxy-aware** — auto-reads `HTTPS_PROXY` / `ALL_PROXY` (HTTP & SOCKS5); validates proxy URL and shows active proxy in TUI
 
-## Quick Start
+
 
 ```bash
 npm install -g @llmtr/cli

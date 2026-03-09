@@ -174,7 +174,30 @@ API keys are resolved in this priority order:
 
 ## Proxy
 
-Set `HTTP_PROXY` / `HTTPS_PROXY` environment variables to route requests through a proxy.
+`llmtr` automatically reads proxy settings from environment variables and applies them to all network requests (including LLM API calls).
+
+**Supported variables** (checked in priority order):
+
+```bash
+HTTPS_PROXY=http://host:port       # HTTP/HTTPS proxy
+https_proxy=http://host:port
+ALL_PROXY=socks5://host:port       # SOCKS5 proxy (e.g. Clash)
+all_proxy=socks5://host:port
+HTTP_PROXY=http://host:port
+http_proxy=http://host:port
+```
+
+**To clear a proxy**, use `unset` — not `export VAR=` (an empty string is silently ignored):
+
+```bash
+# ✓ correct
+unset HTTPS_PROXY HTTP_PROXY ALL_PROXY https_proxy http_proxy all_proxy
+
+# ✗ wrong — leaves the variable set to "", which some tools mishandle
+export HTTPS_PROXY=
+```
+
+When a proxy is active, the TUI displays a subtle `↳ via socks5  127.0.0.1:7897` indicator below the header.
 
 ## License
 

@@ -54,30 +54,27 @@ const results = await translator.translateFile('./README.md', {
 ### Streaming events
 
 ```ts
-await translator.translateStream('Good morning', {
-  targetLanguages: ['de', 'es'],
-  onEvent(event) {
+await translator.translateWithStream(
+  'Good morning',
+  { targetLanguages: ['de', 'es'] },
+  (event) => {
     if (event.type === 'delta')
       process.stdout.write(event.delta)
     if (event.type === 'done')
       console.log('\nDone:', event.language)
   },
-})
+)
 ```
 
 ### Watch a file
 
 ```ts
-import { createLanguageModel, createWatcher, Translator } from '@llmtr/core'
+import { createWatcher } from '@llmtr/core'
 
-const model = createLanguageModel({ provider: 'anthropic' })
-const translator = new Translator(model)
-
-const handle = await createWatcher('./content.md', translator, {
-  targetLanguages: ['zh-CN'],
-  debounce: 500,
-  onEvent(event) { /* StreamEvent */ },
-})
+const handle = createWatcher('./content.md', (filePath) => {
+  console.log('changed:', filePath)
+  // re-run your translation here
+}, { debounce: 500 })
 
 // Later:
 await handle.stop()
@@ -148,10 +145,13 @@ interface TranslationConfig {
 | `validateConfig(config)` | Assert config has required fields |
 | `createWatcher(file, translator, options)` | Watch a file and re-translate on change |
 | `fetchLocales()` | Return bundled list of locale entries |
-| `checkNetwork()` | Verify internet connectivity |
+| `checkNetwork(targetUrl?)` | Verify connectivity to a URL (defaults to generic IPs) |
+| `getProxyUrl()` | Return the effective proxy URL from env vars, or `undefined` |
+| `hasEmptyProxyVar()` | Detect `export PROXY=` (set to empty string instead of unset) |
 | `GLOBAL_CONFIG_PATH` | Path to `~/.llmtr.config.json` |
 | `CONFIG_DEFAULTS` | Default config values |
 | `DEFAULT_MODELS` | Default model per provider |
+| `PROVIDER_BASE_URLS` | Canonical API base URL per provider |
 | `ENV_API_KEYS` | Env var name per provider |
 
 ## License
