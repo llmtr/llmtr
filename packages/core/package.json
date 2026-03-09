@@ -1,7 +1,7 @@
 {
   "name": "@llmtr/core",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Core AI translation API for llmtr — reusable across tools",
   "author": "Moozon <muzhenweizh@gmail.com>",
   "license": "MIT",
