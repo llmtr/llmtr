@@ -3,7 +3,7 @@ import type { LangStatus } from './shared.js'
 import process from 'node:process'
 import { Box, Newline, Text, useApp } from 'ink'
 import { useEffect, useState } from 'react'
-import { fileLink, StatusIcon } from './shared.js'
+import { fileLink, ProxyBadge, StatusIcon } from './shared.js'
 
 interface LangState {
   status: LangStatus
@@ -114,6 +114,7 @@ export function TranslateApp({ translator, text, filePath, options, printResults
           {filePath ? `file: ${filePath}` : `"${(text ?? '').slice(0, 40)}${(text ?? '').length > 40 ? '…' : ''}"`}
         </Text>
       </Box>
+      <ProxyBadge />
 
       {/* Language rows */}
       {options.targetLanguages.map((lang, i) => (

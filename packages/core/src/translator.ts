@@ -7,7 +7,7 @@ import type {
   TranslationResult,
 } from './types.js'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
-import { dirname, extname } from 'node:path'
+import { basename, dirname, extname } from 'node:path'
 import { generateText, streamText } from 'ai'
 import { join } from 'pathe'
 import { DEFAULT_FILE_NAME_PATTERN, DEFAULT_SYSTEM_PROMPT } from './constants.js'
@@ -142,7 +142,7 @@ export class Translator {
     options: TranslateFileOptions,
   ): Promise<string> {
     const ext = extname(inputPath)
-    const name = inputPath.slice(0, inputPath.length - ext.length).split('/').pop()!
+    const name = basename(inputPath, ext)
     const pattern = options.fileNamePattern ?? DEFAULT_FILE_NAME_PATTERN
     const fileName = pattern
       .replace('{name}', name)

@@ -4,7 +4,7 @@ import { createWatcher } from '@llmtr/core'
 import { Box, Newline, Text, useApp, useInput } from 'ink'
 import Spinner from 'ink-spinner'
 import { useEffect, useRef, useState } from 'react'
-import { fileLink, StatusIcon } from './shared.js'
+import { fileLink, ProxyBadge, StatusIcon } from './shared.js'
 
 interface LangState {
   status: LangStatus
@@ -88,6 +88,7 @@ export function WatchApp({ translator, filePath, options }: WatchAppProps) {
           {filePath}
         </Text>
       </Box>
+      <ProxyBadge />
 
       <Box marginBottom={1}>
         {appStatus === 'translating' && (

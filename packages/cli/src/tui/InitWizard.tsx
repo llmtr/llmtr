@@ -30,8 +30,7 @@ const PROVIDERS: Array<{ name: ProviderName, label: string }> = [
   { name: 'deepseek', label: 'DeepSeek' },
 ]
 
-const STEP_ORDER: Step[] = ['provider', 'apiKey', 'model', 'languages', 'systemPrompt', 'outputDir', 'fileNamePattern', 'confirm']
-void STEP_ORDER// Map each config field to the step that edits it
+// Map each config card field key to its editing step
 const FIELD_STEP: Record<string, Step> = {
   provider: 'provider',
   apiKey: 'apiKey',
@@ -107,7 +106,7 @@ export function InitWizard({ outputFile = 'llmtr.config.json', initialConfig }: 
           .catch((err: unknown) => {
             setSaveError(String(err))
             setStep('done')
-            setTimeout(() => exit, 1200)
+            setTimeout(() => exit(), 1200)
           })
       }
       if (_input.toLowerCase() === 'n')

@@ -7,7 +7,6 @@ export interface CliOverrides {
   apiKey?: string
   lang?: string
   outputDir?: string
-  prompt?: string
   fileNamePattern?: string
 }
 

@@ -2,7 +2,7 @@ import { createLanguageModel, Translator } from '@llmtr/core'
 import { defineCommand } from 'citty'
 import { resolveConfig } from '../config.js'
 import { WatchApp } from '../tui/WatchApp.js'
-import { buildTranslateOptions, renderTUI } from '../utils.js'
+import { assertNetwork, buildTranslateOptions, renderTUI } from '../utils.js'
 
 export const watchCommand = defineCommand({
   meta: { description: 'Watch a file and re-translate on every change' },
@@ -54,6 +54,8 @@ export const watchCommand = defineCommand({
       lang: args.lang,
       outputDir: args.output,
     })
+
+    await assertNetwork(config)
 
     const options = {
       ...buildTranslateOptions(config, args),

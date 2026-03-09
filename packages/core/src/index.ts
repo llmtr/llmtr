@@ -5,12 +5,13 @@ export {
   DEFAULT_SYSTEM_PROMPT,
   DEFAULT_WATCH_DEBOUNCE,
   ENV_API_KEYS,
+  PROVIDER_BASE_URLS,
 } from './constants.js'
 export { fetchLocales } from './locale.js'
 export type { LocaleEntry } from './locale.js'
 export { checkNetwork } from './network.js'
 export { createLanguageModel, hasApiKey } from './providers.js'
-export { applyProxyFromEnv } from './proxy.js'
+export { applyProxyFromEnv, getProxyUrl, hasEmptyProxyVar } from './proxy.js'
 export { Translator } from './translator.js'
 export type {
   OutputConfig,

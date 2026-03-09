@@ -1,10 +1,10 @@
 import { readFile } from 'node:fs/promises'
 import process from 'node:process'
-import { checkNetwork, createLanguageModel, Translator } from '@llmtr/core'
+import { createLanguageModel, Translator } from '@llmtr/core'
 import { defineCommand } from 'citty'
 import { resolveConfig } from '../config.js'
 import { TranslateApp } from '../tui/TranslateApp.js'
-import { buildTranslateOptions, renderTUI } from '../utils.js'
+import { assertNetwork, buildTranslateOptions, renderTUI } from '../utils.js'
 
 export const translateCommand = defineCommand({
   meta: { description: 'Translate text or a file (one-shot)' },
@@ -59,22 +59,15 @@ export const translateCommand = defineCommand({
   },
 
   run: async ({ args }) => {
-    try {
-      await checkNetwork()
-    }
-    catch (err) {
-      process.stderr.write(`${err instanceof Error ? err.message : String(err)}\n`)
-      process.exit(1)
-    }
-
     const config = await resolveConfig({
       provider: args.provider,
       model: args.model,
       apiKey: args['api-key'],
       lang: args.lang,
       outputDir: args.output,
-      prompt: args.prompt,
     })
+
+    await assertNetwork(config)
 
     const options = buildTranslateOptions(config, args)
 

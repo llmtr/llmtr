@@ -23,3 +23,16 @@ export const DEFAULT_SYSTEM_PROMPT
 export const DEFAULT_FILE_NAME_PATTERN = '{name}.{lang}{ext}'
 
 export const DEFAULT_WATCH_DEBOUNCE = 500
+
+/**
+ * Canonical base URLs for each provider. Used as the network-check probe target
+ * so that provider-specific connectivity (including regional routing) is validated
+ * rather than generic IPs that may be unreachable in some networks.
+ */
+export const PROVIDER_BASE_URLS: Record<ProviderName, string> = {
+  openai: 'https://api.openai.com',
+  anthropic: 'https://api.anthropic.com',
+  google: 'https://generativelanguage.googleapis.com',
+  mistral: 'https://api.mistral.ai',
+  deepseek: 'https://api.deepseek.com',
+}
