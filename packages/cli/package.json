@@ -1,7 +1,7 @@
 {
   "name": "@llmtr/cli",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "AI-powered translation CLI — translate text & files using your favourite LLM",
   "author": "Moozon <muzhenweizh@gmail.com>",
   "license": "MIT",
