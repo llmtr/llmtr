@@ -2,6 +2,8 @@
 
 AI-powered translation CLI. Translate text and files into multiple languages simultaneously using your favourite LLM provider — with a live TUI, watch mode, and a config wizard.
 
+https://github.com/user-attachments/assets/fb4d9845-215c-44cb-8182-f70221212932
+
 ## Packages
 
 | Package | Description |
